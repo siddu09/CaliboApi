@@ -1,0 +1,46 @@
+{
+  "title": "",
+  "description": "",
+
+  "businessGroupId": "",
+
+  "customerSegments": [],
+
+  "creatorId": "",
+
+  "creatorRoleId": "",
+
+  "projectOwnerRoleId": "",
+
+  "portfolioId": "",
+
+  "portfolioTitle": "",
+
+  "status": "ACTIVE",
+
+  "priority": "MEDIUM",
+
+  "visibility": "PRIVATE",
+
+  "memberList": [],
+
+  "tags": [],
+
+  "labels": [],
+
+  "startDate": "",
+
+  "endDate": "",
+
+  "targetLaunchDate": "",
+
+  "budget": 0,
+
+  "currency": "USD",
+
+  "notes": "",
+
+  "attachments": [],
+
+  "customFields": {}
+}

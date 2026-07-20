@@ -1,0 +1,45 @@
+{
+  "firstName": "",
+  "lastName": "",
+  "displayName": "",
+  "email": "",
+  "employeeId": "",
+  "phoneNumber": "",
+
+  "organizationName": "",
+
+  "designation": "",
+
+  "department": "",
+
+  "location": "",
+
+  "businessGroupId": "",
+
+  "customerSegmentId": "",
+
+  "roles": [],
+
+  "skills": [],
+
+  "status": "ACTIVE",
+
+  "isActive": true,
+
+  "isPrimaryUser": false,
+
+  "sendInvitation": true,
+
+  "language": "en",
+
+  "timeZone": "Asia/Kolkata",
+
+  "dateFormat": "dd/MM/yyyy",
+
+  "memberType": "USER",
+
+  "preferences": {
+    "emailNotification": true,
+    "smsNotification": false
+  }
+}
