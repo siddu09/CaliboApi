@@ -26,9 +26,6 @@
         <selenium.version>4.34.0</selenium.version>
         <restassured.version>5.5.5</restassured.version>
         <testng.version>7.11.0</testng.version>
-        <jackson.version>2.19.2</jackson.version>
-        <faker.version>1.0.2</faker.version>
-        <commons.lang3.version>3.18.0</commons.lang3.version>
         <json.simple.version>1.1.1</json.simple.version>
         <webdrivermanager.version>6.3.2</webdrivermanager.version>
 
@@ -41,7 +38,6 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- Selenium -->
@@ -77,11 +73,11 @@
             <version>${restassured.version}</version>
         </dependency>
 
-        <!-- Jackson -->
+        <!-- Gson for JSON parsing -->
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>${jackson.version}</version>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.11.0</version>
         </dependency>
 
         <!-- JSON Simple -->
@@ -91,31 +87,20 @@
             <version>${json.simple.version}</version>
         </dependency>
 
-        <!-- Faker -->
-        <dependency>
-            <groupId>com.github.javafaker</groupId>
-            <artifactId>javafaker</artifactId>
-            <version>${faker.version}</version>
-        </dependency>
-
-        <!-- Apache Commons -->
-        <dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-lang3</artifactId>
-            <version>${commons.lang3.version}</version>
-        </dependency>
-
-        <!-- Optional: Lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.38</version>
-            <scope>provided</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
+
+        <sourceDirectory>.</sourceDirectory>
+
+        <testSourceDirectory>java</testSourceDirectory>
+
+        <testResources>
+            <testResource>
+                <directory>resources</directory>
+                <targetPath>resources</targetPath>
+            </testResource>
+        </testResources>
 
         <plugins>
 
@@ -126,6 +111,10 @@
                 <version>3.14.0</version>
                 <configuration>
                     <release>21</release>
+                    <excludes>
+                        <exclude>java/**</exclude>
+                        <exclude>Main.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
 
@@ -204,4 +193,3 @@
     </profiles>
 
 </project>
-

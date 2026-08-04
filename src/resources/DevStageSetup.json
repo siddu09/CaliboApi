@@ -1,0 +1,32 @@
+{
+  "projectTitlePrefix": "Auto_Proj_DevStage_",
+  "workstreamTitlePrefix": "AutoWS_DevStage_",
+  "projectDescription": "Automation Dev Stage Project",
+  "workstreamDescription": "Automation Dev Stage Workstream",
+  "projectTeamName": "Auto_CreateProjectV2",
+  "workstreamTeamName": "AutomationWorkStreamTeam",
+  "portfolioName": "DefaultAutomationPL",
+  "ownerRoleKey": "Owner",
+  "businessGroupName": "BG_Automation",
+  "customerSegmentName": "Cust_Automation",
+  "stageName": "Dev",
+  "releaseName": "Default Release",
+  "techStacks": [
+    {"name": "Django 5.2", "subSection": "Back-End Technologies", "contextPrefix": "dpldjango52"},
+    {"name": "Fast API 0.110.1", "subSection": "Back-End Technologies", "contextPrefix": "dplfastapi01101"},
+    {"name": "Vue.js with TypeScript", "subSection": "Front-End Technologies", "contextPrefix": "dplvuets"}
+  ],
+  "gitlabGroupName": "Automation",
+  "branch": "main",
+  "namespace": "automation",
+  "imageTag": "1",
+  "pipelinePollSeconds": 10,
+  "pipelineMaxAttempts": 90,
+  "configurationNames": {
+    "CLOUD": "Automation tenant",
+    "KUBERNETES": "cluster-eks-qa",
+    "DEV_OPS": "Automation Jenkins",
+    "SECURITY_ASSESSMENT": "Automation Sonarqube",
+    "ARTIFACTORY_MANAGEMENT": "Automation JFrog"
+  }
+}

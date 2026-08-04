@@ -1,0 +1,4 @@
+tests/UsersTests.class
+tests/DevStageTests.class
+tests/PortfolioProductFeatureTests.class
+tests/DataIngestionTests.class

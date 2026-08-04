@@ -1,0 +1,404 @@
+{
+  "crawlerInPutJson": {
+    "name": "MSSQL_Crawler",
+    "sourceType": "RDBMS",
+    "subType": "MS_SQL_SERVER",
+    "attributes": [
+      {
+        "dataStoreId": "44e3ef69-1a49-4dc9-a60c-a8d3e5f9f6e8",
+        "attributeName": "host",
+        "attributeValue": "naturesweet-poc.c2uom5okqwzd.us-east-1.rds.amazonaws.com"
+      },
+      {
+        "dataStoreId": "44e3ef69-1a49-4dc9-a60c-a8d3e5f9f6e8",
+        "attributeName": "port",
+        "attributeValue": "1433"
+      },
+      {
+        "dataStoreId": "44e3ef69-1a49-4dc9-a60c-a8d3e5f9f6e8",
+        "attributeName": "databaseName",
+        "attributeValue": "AUTOMATION"
+      },
+      {
+        "dataStoreId": "44e3ef69-1a49-4dc9-a60c-a8d3e5f9f6e8",
+        "attributeName": "username",
+        "attributeValue": "admin"
+      },
+      {
+        "dataStoreId": "44e3ef69-1a49-4dc9-a60c-a8d3e5f9f6e8",
+        "attributeName": "password",
+        "attributeValue": "Pa55w0rd"
+      }
+    ]
+  },
+  "dataCrawlerDetailsExpected": {
+    "schema": "dbo",
+    "tables": [
+      {
+        "id": "f6b89b9c-1b2a-43ce-af02-f66791bdcf35",
+        "tableName": "patients_5k",
+        "owner": null,
+        "fields": [
+          {
+            "id": "357cbd04-c43a-4a1c-a7b9-992734ca77a2",
+            "name": "doctor_name",
+            "dataType": "varchar",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "a7b2dce6-6d58-40b0-a70a-2b2865f9f775",
+            "name": "history",
+            "dataType": "varchar",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "2051a058-bb5f-4a58-a175-d9a2dd7a09fe",
+            "name": "patient_email",
+            "dataType": "varchar",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "51037591-beb6-49af-8281-bcfa55150dd5",
+            "name": "visited_date",
+            "dataType": "date",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "549ec51f-5349-45e7-8eee-2c410dee76cb",
+            "name": "patient_contact",
+            "dataType": "varchar",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "26032d1d-619f-4a94-8236-0e7205a69ca6",
+            "name": "amount",
+            "dataType": "int",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "67f7f519-aa7a-42b1-bda7-7c4be7ec522b",
+            "name": "patient_address",
+            "dataType": "varchar",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "d03bd042-ee24-4523-a2ba-cc613597b80a",
+            "name": "id",
+            "dataType": "int",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "0a297045-2c4b-4216-9b01-b0f5ebeb5f23",
+            "name": "department",
+            "dataType": "varchar",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          },
+          {
+            "id": "a524aa79-6932-4ba5-9272-104b4312c7bf",
+            "name": "patient_name",
+            "dataType": "varchar",
+            "comment": null,
+            "isPrimaryKey": null,
+            "status": "ADDED",
+            "conditionAdded": null
+          }
+        ],
+        "status": "ADDED",
+        "type": null
+      }
+    ],
+    "joins": [],
+    "status": "ADDED",
+    "name": null,
+    "id": null
+  },
+  "configureInputSnowflakeDataLake": [
+    {
+      "attributes": [
+        {
+          "dataStoreId": "#snowflakeDatastoreId",
+          "attributeName": "warehouse",
+          "attributeValue": "#snowflakeWarehouse"
+        }
+      ]
+    }
+  ],
+  "MSSQLConfigureInput": [
+    {
+      "attributeName": "catalogName",
+      "attributeValue": "#CatalogName"
+    },
+    {
+      "attributeName": "catalogId",
+      "attributeValue": "#CatalogId"
+    },
+    {
+      "attributeName": "catalogSchema",
+      "attributeValue": "#SchemaName"
+    },
+    {
+      "attributeName": "tables",
+      "attributeValue": [
+        {
+          "tableName": "#TableName",
+          "id": "#TableId"
+        }
+      ]
+    }
+  ],
+  "databricksTemplateJobInput": {
+    "projectId": "62c4a7d8-afed-4e82-9268-70a90efe1bc0",
+    "repositoryId": "1a90e127-9d80-4240-96a5-23b907e6ec3a",
+    "templateId": "832e77d5-3567-11ec-a42e-0245c2471a63",
+    "templateName": "Microsoft SQL Server to Snowflake",
+    "jobType": "DATA_INTEGRATION",
+    "clusterId": "1004-064851-v37s67qv",
+    "source": {
+      "type": "RDBMS",
+      "subType": "MS_SQL_SERVER",
+      "attributes": [
+        {
+          "attributeName": "catalogName",
+          "attributeValue": "#CatalogName"
+        },
+        {
+          "attributeName": "catalogId",
+          "attributeValue": "#CatalogId"
+        },
+        {
+          "attributeName": "catalogSchema",
+          "attributeValue": "#SchemaName"
+        },
+        {
+          "attributeName": "tables",
+          "attributeValue": [
+            {
+              "tableName": "#TableName",
+              "id": "#TableId"
+            }
+          ]
+        }
+      ],
+      "nodeId": "5b1427e2-e27b-404c-9c61-72b0a5418444",
+      "stageType": "DATA_SOURCES"
+    },
+    "target": {
+      "type": "SNOWFLAKE",
+      "attributes": [
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "cloudProvider",
+          "attributeValue": "AWS"
+        },
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "serviceProvider",
+          "attributeValue": "AWS"
+        },
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "warehouseName",
+          "attributeValue": "COMPUTE_WH"
+        },
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "isOrchestratorConfiguration",
+          "attributeValue": "false"
+        },
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "identitySecurityProvider",
+          "attributeValue": "LAZSA"
+        },
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "accountUrl",
+          "attributeValue": "https://dtvescn-se60798.snowflakecomputing.com/"
+        },
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "databaseName",
+          "attributeValue": "AUTOMATION"
+        },
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "schemaName",
+          "attributeValue": "DATA_PIPELINE_TARGET_SCHEMA"
+        },
+        {
+          "dataStoreId": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+          "attributeName": "warehouse",
+          "attributeValue": "COMPUTE_WH"
+        }
+      ],
+      "nodeId": "e3b1ca33-6df5-4847-9459-2092eb3e3b08",
+      "stageType": "DATA_LAKE",
+      "id": "d8ca9af1-df14-4b49-8e54-95449d1620ab",
+      "name": "Snowflake_Automation"
+    },
+    "name": "Databricks Integration Job",
+    "realTime": true,
+    "syncDetail": {},
+    "sourceToTargetMapping": {
+      "mapDetails": [
+        {
+          "sourceName": "#TableName",
+          "tableName": "#targetTableName",
+          "mode": "append"
+        }
+      ]
+    },
+    "dataDedupConfig": {},
+    "transformations": {},
+    "projectName": "Auto_Proj_DpFtpDbS3_DjL1F1",
+    "featureName": "AutoWS_DpFtpDbS3_DjL1F1",
+    "dbRepoName": "",
+    "metadataStore": {
+      "enableMetadataStore": false
+    },
+    "jobConfig": {
+      "newCluster": {
+        "autoscale": {
+          "minWorkers": null,
+          "maxWorkers": null
+        }
+      },
+      "useAllPurposeCluster": true,
+      "selectedClusterConfigId": null
+    },
+    "schemaMapping": {
+      "fieldMappingAndSelection": [],
+      "columnMappingDetails": [
+        {
+          "isNewEntry": false,
+          "sourceName": "patients_5k",
+          "targetTableName": "patients_5k",
+          "isInferSchema": true,
+          "isEvolveSchema": true,
+          "successPipelineOnConstraintFail": false,
+          "mainColumnList": [
+            {
+              "itemIndex": 0,
+              "isSelected": true,
+              "sourceColumnName": "patient_address",
+              "targetColumnName": "patient_address",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "patient_address"
+            },
+            {
+              "itemIndex": 1,
+              "isSelected": true,
+              "sourceColumnName": "doctor_name",
+              "targetColumnName": "doctor_name",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "doctor_name"
+            },
+            {
+              "itemIndex": 2,
+              "isSelected": true,
+              "sourceColumnName": "history",
+              "targetColumnName": "history",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "history"
+            },
+            {
+              "itemIndex": 3,
+              "isSelected": true,
+              "sourceColumnName": "patient_contact",
+              "targetColumnName": "patient_contact",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "patient_contact"
+            },
+            {
+              "itemIndex": 4,
+              "isSelected": true,
+              "sourceColumnName": "patient_name",
+              "targetColumnName": "patient_name",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "patient_name"
+            },
+            {
+              "itemIndex": 5,
+              "isSelected": true,
+              "sourceColumnName": "visited_date",
+              "targetColumnName": "visited_date",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "visited_date"
+            },
+            {
+              "itemIndex": 6,
+              "isSelected": true,
+              "sourceColumnName": "department",
+              "targetColumnName": "department",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "department"
+            },
+            {
+              "itemIndex": 7,
+              "isSelected": true,
+              "sourceColumnName": "patient_email",
+              "targetColumnName": "patient_email",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "patient_email"
+            },
+            {
+              "itemIndex": 8,
+              "isSelected": true,
+              "sourceColumnName": "id",
+              "targetColumnName": "id",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "id"
+            },
+            {
+              "itemIndex": 9,
+              "isSelected": true,
+              "sourceColumnName": "amount",
+              "targetColumnName": "amount",
+              "isNewTargetTable": true,
+              "tags": [],
+              "renamedTargetColumnName": "amount"
+            }
+          ]
+        }
+      ],
+      "isEvolveSchema": false
+    }
+  },
+  "dataIntegrationTableRowData": []
+}

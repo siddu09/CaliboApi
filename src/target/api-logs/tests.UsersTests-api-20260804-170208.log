@@ -1,0 +1,5168 @@
+Request method:	POST
+Request URI:	https://accelerate-qa.calibo.com/keycloakadapter/users/retrieveAllUsersWithTeams
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 200 
+Date: Tue, 04 Aug 2026 11:32:12 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a71cdba058ea81ca4dac01d1d3ed0f8
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: 645df60e-6485-402e-ab4c-01f8a4fa48ed#467874
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 1869
+X-Kong-Proxy-Latency: 2
+Via: kong/3.0.2.0-enterprise-edition
+
+{
+    "users": [
+        {
+            "id": "039e241c-6b3c-40fc-be6c-e59acf9e160b",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "kqi5tc@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "085c3433-d4d0-47e5-bfbb-6835b19706e3",
+            "firstName": "Veena",
+            "lastName": "Kumari",
+            "fullName": null,
+            "email": "vekumari.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": false,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "tenantAdmin,Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "0968e53a-e9ec-4d7c-9e96-4036b12c8466",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "4lio4q@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "0f44e029-1a33-4acd-9390-3db77196c17b",
+            "firstName": "Nikhil Ramdas",
+            "lastName": "Bhalerao",
+            "fullName": null,
+            "email": "nbhalerao.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "12eeeab4-d5b1-4462-85f4-7053af2775e8",
+            "firstName": "Syed",
+            "lastName": "Munna",
+            "fullName": null,
+            "email": "ssardar.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "b4d2be2a-323e-4d1e-bb43-8c598ea86bbe",
+                "objectValue": "AutomationOrg"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": 1783276200000,
+            "resourceAvailabilityEndDate": 1783535399000,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "17aacde4-9792-4cb6-8eb7-e7f68ccdfcc2",
+            "firstName": "Test",
+            "lastName": "Automation",
+            "fullName": null,
+            "email": "test.auto123@calibo.com",
+            "country": null,
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "1b82a446-1c58-4ae8-b83e-c9a01a2759c9",
+            "firstName": "Siddesh",
+            "lastName": "Belura",
+            "fullName": null,
+            "email": "a1b2c3@calibo.com",
+            "country": "India",
+            "roles": [
+                "AutomationRuntimeRole466",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                {
+                    "id": "77e01ed1-8ece-4cbf-84c7-68332907a817",
+                    "objectValue": "QA"
+                }
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": "bbb382f7-df79-4a8e-a408-ef85cf846223",
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator,AutomationRuntimeRole466",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "27d0ced5-73c7-4c6a-a027-1335be102b47",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "9am8ih@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "2810748e-d631-49df-99d2-573f7e997214",
+            "firstName": "Shuchita",
+            "lastName": "Rawat",
+            "fullName": null,
+            "email": "srawat@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "28bab0a6-daf7-4020-a325-81cbb5d25286",
+            "firstName": "A D",
+            "lastName": "Poojesh",
+            "fullName": null,
+            "email": "poojeshad.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "2ad43086-2715-420e-969a-27fcedfd6650",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "0djbih@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "2cac4f88-1bdd-4adc-be49-e4b365d33438",
+            "firstName": "Kunal",
+            "lastName": "Kampassi",
+            "fullName": null,
+            "email": "kukampassi@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "334b49ce-0c97-4e3d-8666-b073e8c01c46",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "54z8zv@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "36112cfd-14d7-4209-b09c-1a8f946996fe",
+            "firstName": "Lazsa",
+            "lastName": "Developer4",
+            "fullName": null,
+            "email": "lazsa-developer4@calibo.com",
+            "country": "",
+            "roles": [
+                "AutomationRuntimeRole5966",
+                "tenantAdmin",
+                "AutomationRuntimeRoleUpdated",
+                "AutomationRuntimeRole466",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Release Manager"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                {
+                    "id": "2d78b5bc-b56b-4d6a-a77c-b4c15d912d8f",
+                    "name": "AutomationTeam",
+                    "agileAssociation": true,
+                    "userCount": 1,
+                    "users": [
+                        {
+                            "id": "36112cfd-14d7-4209-b09c-1a8f946996fe",
+                            "firstName": "Lazsa",
+                            "lastName": "Developer4",
+                            "email": "lazsa-developer4@calibo.com",
+                            "code": null,
+                            "memberShipType": "MEMBER",
+                            "phoneNumber": null,
+                            "country": "",
+                            "additionalAttributes": [
+                                
+                            ],
+                            "roles": [
+                                "f3b3c02b-f76b-4e8d-8dd0-a23159abe7c4"
+                            ],
+                            "userTeamAllocation": 0,
+                            "userAllocations": [
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "2"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "10"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "7"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "9"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "11"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "12"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "7"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "2"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "5"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "4"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "12"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "6"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "12"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "9"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "1"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "3"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "10"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "6"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "8"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "4"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "1"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "5"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "1"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "9"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "3"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2028",
+                                    "month": "1"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "3"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "5"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "7"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "2"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "10"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "11"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2025",
+                                    "month": "8"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "4"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "8"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2026",
+                                    "month": "11"
+                                },
+                                {
+                                    "allocation": 10,
+                                    "year": "2027",
+                                    "month": "6"
+                                }
+                            ],
+                            "costArea": null,
+                            "cost": null,
+                            "skills": [
+                                
+                            ],
+                            "organizationName": "",
+                            "communicationEmail": null,
+                            "resourceStartDate": null,
+                            "resourceEndDate": null,
+                            "allocationFrom": 1738131048000,
+                            "allocationTo": 1832739048000,
+                            "status": "ACTIVE",
+                            "forecastStatus": null,
+                            "manager": null,
+                            "managerName": null,
+                            "userConstantAllocation": null,
+                            "deleted": false
+                        }
+                    ],
+                    "description": "Do not edit or delete used for daily automation execution",
+                    "additionalAttributes": [
+                        
+                    ],
+                    "createdBy": "ddeshpande@calibo.com",
+                    "createdOn": 1738159600699,
+                    "updatedBy": "ddeshpande@calibo.com",
+                    "updatedOn": 1738159600699,
+                    "organisation": null,
+                    "status": "ACTIVE",
+                    "deactivatedOn": null,
+                    "adGroupLink": false,
+                    "adGroups": null,
+                    "existingAdGroup": false
+                }
+            ],
+            "allocation": 10,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "37bf55de-b913-4bd4-aacf-e9e89b092714",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "vetepz@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "3cdf8c2e-c560-4e5d-8f36-245459b8f839",
+            "firstName": "Abheesh",
+            "lastName": "George",
+            "fullName": null,
+            "email": "abgeorge.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "3ee48a41-d2b9-4c3f-891e-2ab5fb8c0e91",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "bfwgac@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "43c25273-94bc-4316-83af-2fc39b4c9411",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "m66dpf@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720854000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "47c6e9d5-06ac-4128-9643-817766c38f18",
+            "firstName": "Naveen Kumar",
+            "lastName": "Singotam",
+            "fullName": null,
+            "email": "nsingotam@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "PENDING",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "48f842c1-0962-4aed-9934-eb0681e3ae83",
+            "firstName": "Mahadev",
+            "lastName": "Kammar",
+            "fullName": null,
+            "email": "mkammar.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": 1785177000000,
+            "resourceAvailabilityEndDate": 1785522599000,
+            "communicationEmail": null,
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "4cb64a11-3d70-4d10-942a-4da8c7e451af",
+            "firstName": "Adaikkappan",
+            "lastName": "Ramanathan",
+            "fullName": null,
+            "email": "adramanathan.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": true,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "4d80e70a-04fb-4f31-bf50-10cc7b6709c9",
+            "firstName": "Siddesh",
+            "lastName": "Belura",
+            "fullName": null,
+            "email": "sibelura.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "CaliboSuperAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "53b04f27-cd27-4217-af8c-f3fe4715330e",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "9hmsb2@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "627b5801-3186-4eed-b21f-34044ad5cd35",
+            "firstName": "Suyog",
+            "lastName": "Mahaveer Upadhye",
+            "fullName": null,
+            "email": "supadhye@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "PENDING",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "69e09025-7f63-4b61-b1e7-c57bb77be22d",
+            "firstName": "Nagaramani",
+            "lastName": "Kanaparti",
+            "fullName": null,
+            "email": "nkanaparti@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "6bb989d7-570a-4661-a6ba-7c21fc0ab048",
+            "firstName": "Aarti",
+            "lastName": "Kumari",
+            "fullName": null,
+            "email": "aashah.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": 1779301800000,
+            "resourceAvailabilityEndDate": 1779647399000,
+            "communicationEmail": null,
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "7377c855-879b-4de1-bd53-a90f22292a6f",
+            "firstName": "Kiran",
+            "lastName": "Gaikwad",
+            "fullName": null,
+            "email": "kgaikwad.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "744dd643-4cc4-41da-b707-0dd0c0e65087",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "6099cc@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "847a8cf1-1b68-48cc-9715-509e0ee2beeb",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "616rb4@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "873dc50b-edf6-46e0-b6b7-426c9381e6e6",
+            "firstName": "e2e",
+            "lastName": "automation",
+            "fullName": null,
+            "email": "e2e.automation@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Developer"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                {
+                    "id": "02b3a40b-d572-4cf1-8aa7-be2d640d1bc0",
+                    "name": "TeamOne_OrgH_33m9OK",
+                    "agileAssociation": true,
+                    "userCount": 1,
+                    "users": [
+                        {
+                            "id": "873dc50b-edf6-46e0-b6b7-426c9381e6e6",
+                            "firstName": "e2e",
+                            "lastName": "automation",
+                            "email": "e2e.automation@calibo.com",
+                            "code": null,
+                            "memberShipType": "MEMBER",
+                            "phoneNumber": null,
+                            "country": "",
+                            "additionalAttributes": [
+                                
+                            ],
+                            "roles": [
+                                "5bc63efe-452d-4032-b425-71d9fadef853"
+                            ],
+                            "userTeamAllocation": 0,
+                            "userAllocations": [
+                                {
+                                    "allocation": 1,
+                                    "year": "2026",
+                                    "month": "6"
+                                },
+                                {
+                                    "allocation": 1,
+                                    "year": "2026",
+                                    "month": "5"
+                                }
+                            ],
+                            "costArea": null,
+                            "cost": null,
+                            "skills": [
+                                
+                            ],
+                            "organizationName": "",
+                            "communicationEmail": null,
+                            "resourceStartDate": null,
+                            "resourceEndDate": null,
+                            "allocationFrom": 1779408000000,
+                            "allocationTo": 1782000000000,
+                            "status": "ACTIVE",
+                            "forecastStatus": null,
+                            "manager": null,
+                            "managerName": null,
+                            "userConstantAllocation": null,
+                            "deleted": false
+                        }
+                    ],
+                    "description": "Do not Edit or Delete",
+                    "additionalAttributes": [
+                        
+                    ],
+                    "createdBy": "api.automation@calibo.com",
+                    "createdOn": 1779427544192,
+                    "updatedBy": "api.automation@calibo.com",
+                    "updatedOn": 1779427544192,
+                    "organisation": {
+                        "id": "bb5435ee-57ed-4bbd-9154-48d4cd0b8d36",
+                        "orgName": "Org_Automation",
+                        "schemaId": "aeae9a58-b5c5-47b1-b536-91f04e6ad1fe",
+                        "label": "Group",
+                        "description": null,
+                        "parentId": null,
+                        "createdBy": null,
+                        "createdOn": null,
+                        "children": null
+                    },
+                    "status": "ACTIVE",
+                    "deactivatedOn": null,
+                    "adGroupLink": false,
+                    "adGroups": null,
+                    "existingAdGroup": false
+                }
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "8b1c3fc4-652f-4fdc-94f1-2612aa1ea10e",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "1nf92v@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "91b6b0bc-fac2-4b64-ae0f-cb6555e5549d",
+            "firstName": "Ponnaganti Venkata",
+            "lastName": "Divya",
+            "fullName": null,
+            "email": "dponnaganti.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "PENDING",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "95484cdc-1d70-44fb-911d-65779ce45e60",
+            "firstName": "Abdiel",
+            "lastName": "Olmos",
+            "fullName": null,
+            "email": "aolmos.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "968f342c-4c40-4ded-9d69-94d50767f726",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "r7rha1@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "9d407007-fb08-4b13-bb62-404678a23018",
+            "firstName": "Dnyanesh",
+            "lastName": "Sunil Deshpande",
+            "fullName": null,
+            "email": "ddeshpande@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "a60028df-7214-4fbc-a56b-74a47d538760",
+            "firstName": "API",
+            "lastName": "Automation",
+            "fullName": null,
+            "email": "api.automation@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Designer"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                {
+                    "id": "29546560-9b75-4c5d-8170-155ef8366538",
+                    "name": "AutomationPermanantTeam",
+                    "agileAssociation": true,
+                    "userCount": 1,
+                    "users": [
+                        {
+                            "id": "a60028df-7214-4fbc-a56b-74a47d538760",
+                            "firstName": "API",
+                            "lastName": "Automation",
+                            "email": "api.automation@calibo.com",
+                            "code": null,
+                            "memberShipType": "MEMBER",
+                            "phoneNumber": null,
+                            "country": "",
+                            "additionalAttributes": [
+                                
+                            ],
+                            "roles": [
+                                "f52a9f56-40d3-4682-8ee7-7ebda177ba09"
+                            ],
+                            "userTeamAllocation": 0,
+                            "userAllocations": [
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "12"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "10"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "11"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "3"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "6"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "5"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "10"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "7"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "2"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "12"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "9"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "6"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "5"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "2"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "6"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "5"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "9"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "8"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "9"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "7"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "4"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "7"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "11"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2028",
+                                    "month": "1"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "11"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "3"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "10"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "1"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "12"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "2"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "4"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "1"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "3"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2027",
+                                    "month": "4"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2025",
+                                    "month": "8"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2028",
+                                    "month": "2"
+                                },
+                                {
+                                    "allocation": 0,
+                                    "year": "2026",
+                                    "month": "8"
+                                }
+                            ],
+                            "costArea": null,
+                            "cost": null,
+                            "skills": [
+                                
+                            ],
+                            "organizationName": "",
+                            "communicationEmail": null,
+                            "resourceStartDate": null,
+                            "resourceEndDate": null,
+                            "allocationFrom": 1740030370000,
+                            "allocationTo": 1834638370000,
+                            "status": "ACTIVE",
+                            "forecastStatus": null,
+                            "manager": null,
+                            "managerName": null,
+                            "userConstantAllocation": null,
+                            "deleted": false
+                        }
+                    ],
+                    "description": "Do not delete or edit as used for automation execution",
+                    "additionalAttributes": [
+                        
+                    ],
+                    "createdBy": "ddeshpande@calibo.com",
+                    "createdOn": 1740058197723,
+                    "updatedBy": "ddeshpande@calibo.com",
+                    "updatedOn": 1740058197723,
+                    "organisation": null,
+                    "status": "ACTIVE",
+                    "deactivatedOn": null,
+                    "adGroupLink": false,
+                    "adGroups": null,
+                    "existingAdGroup": false
+                }
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "a7b09aad-62f4-463f-95e5-289817cbed1b",
+            "firstName": "FirstName",
+            "lastName": "LastName",
+            "fullName": null,
+            "email": "testemaily0eoh1@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "b4d2be2a-323e-4d1e-bb43-8c598ea86bbe",
+                "objectValue": "AutomationOrg"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1779349558000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "b6d43b11-c77a-470d-93a3-a7a466987d58",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "5hp827@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "bbb382f7-df79-4a8e-a408-ef85cf846223",
+            "firstName": "Khushboo",
+            "lastName": "Motwani",
+            "fullName": null,
+            "email": "kmotwani.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "c38a4b83-f944-44a0-9c07-6dfbcc075027",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "qf04t9@calibo.com",
+            "country": "India",
+            "roles": [
+                "Release Train Engineer"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "c40e1753-a1bb-41ea-89ba-a3f1facdc402",
+            "firstName": "Sharad",
+            "lastName": "Patel",
+            "fullName": null,
+            "email": "spatel@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "c4de6c78-645b-431c-a39d-2ff6d5faa12e",
+            "firstName": "sdsd",
+            "lastName": "sdsd",
+            "fullName": null,
+            "email": "mn45op@calibo.com",
+            "country": "British Indian Ocean Territory",
+            "roles": [
+                "Semantic Job Operator",
+                "AutomationRuntimeRoleUpdated",
+                "AutomationRuntimeRole466"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "b4d2be2a-323e-4d1e-bb43-8c598ea86bbe",
+                "objectValue": "AutomationOrg"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": false,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": "6bb989d7-570a-4661-a6ba-7c21fc0ab048",
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "AutomationRuntimeRole466,AutomationRuntimeRoleUpdated,Semantic Job Operator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "cd89dfba-8064-41f6-a333-16a202272a40",
+            "firstName": "Shilpa Mukund",
+            "lastName": "Toke",
+            "fullName": null,
+            "email": "stoke@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "cf4a7dd7-bb44-42a9-ac76-fd0340a7e118",
+            "firstName": "sdsd",
+            "lastName": "sdsd",
+            "fullName": null,
+            "email": "uv8wxy@calibo.com",
+            "country": "British Indian Ocean Territory",
+            "roles": [
+                "Semantic Job Operator",
+                "AutomationRuntimeRoleUpdated",
+                "AutomationRuntimeRole466"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "b4d2be2a-323e-4d1e-bb43-8c598ea86bbe",
+                "objectValue": "AutomationOrg"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": false,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": "6bb989d7-570a-4661-a6ba-7c21fc0ab048",
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "AutomationRuntimeRole466,AutomationRuntimeRoleUpdated,Semantic Job Operator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "cfce1c0e-5f44-47be-9d49-a1bec6ce4c53",
+            "firstName": "Ranju",
+            "lastName": "Kumari External",
+            "fullName": null,
+            "email": "rakumari.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "d09e06d5-03f8-47ee-a301-1d0cc502e305",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "wltpre@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "db6dfd3b-2304-4ac1-a73b-fc70c46ced88",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": null,
+            "email": "08wzp5@calibo.com",
+            "country": "India",
+            "roles": [
+                "Release Train Engineer"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": 1784720855000,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "OFFBOARDED",
+            "userRemovedFromAd": true,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "e0a39c3c-b682-4b1b-b1de-e84047e3690d",
+            "firstName": "Jotiram",
+            "lastName": "Sudam Chavan",
+            "fullName": null,
+            "email": "jchavan@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "e352b4df-fc82-4713-afdf-15df71cf3aee",
+            "firstName": "Maramreddy",
+            "lastName": "Ranganatha Reddy",
+            "fullName": null,
+            "email": "mrreddy@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "edc79f56-03a1-44a5-b89f-87104afa6a87",
+            "firstName": "Lingeswar",
+            "lastName": "Kondreddy",
+            "fullName": null,
+            "email": "lkondreddy@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "f9c13af4-a58f-48f2-86ad-c64af399607b",
+            "firstName": "Ritesh",
+            "lastName": "Das",
+            "fullName": null,
+            "email": "rdas@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        }
+    ],
+    "totalElements": 51,
+    "totalPages": 1
+}
+Request method:	GET
+Request URI:	https://accelerate-qa.calibo.com/configuration/settings/fieldvalues?isUsageRequired=false
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Date: Tue, 04 Aug 2026 11:32:14 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a71cdbe384e0ea2e62f0ae2a1924389
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: 645df60e-6485-402e-ab4c-01f8a4fa48ed#468002
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 8
+X-Kong-Proxy-Latency: 1
+Via: kong/3.0.2.0-enterprise-edition
+
+[
+    {
+        "id": "1c173624-894b-43ba-af59-ebb2eaabe79f",
+        "objectName": "businessGroup",
+        "consumedIn": "Product or Idea",
+        "isCreationEnabled": true,
+        "values": [
+            {
+                "id": "a4472f5a-67ef-4da0-ab2c-5d399733e831",
+                "objectValue": "BG_Automation",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "4fbe8acc-ae75-47f2-a626-19b502d2af43",
+                "objectValue": "Consulting Service",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "13f5a196-d93c-44a2-9cc5-44e0eeb98322",
+                "objectValue": "Digital Commerce",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "8110abf2-7bbc-4a58-b883-620e31f2bf2b",
+                "objectValue": "Human Resource",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "6df6192c-4835-4462-b182-e02daed2587c",
+                "objectValue": "test",
+                "usage": [
+                    
+                ],
+                "used": false
+            }
+        ]
+    },
+    {
+        "id": "1db14392-b344-4163-8804-f3634551b06c",
+        "objectName": "tags",
+        "consumedIn": null,
+        "isCreationEnabled": true,
+        "values": [
+            {
+                "id": "1cedb10e-c99b-40eb-a3c9-b769258e4e48",
+                "objectValue": "Automation",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "393546b4-649c-456a-b0c4-3033524314d1",
+                "objectValue": "Tag_Automation",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "7cde1400-a697-473a-8ee7-01a74b277bac",
+                "objectValue": "TrainTags",
+                "usage": [
+                    
+                ],
+                "used": false
+            }
+        ]
+    },
+    {
+        "id": "5af480af-4a4d-47d4-a69c-719840280e04",
+        "objectName": "customer",
+        "consumedIn": null,
+        "isCreationEnabled": true,
+        "values": [
+            {
+                "id": "59119a4b-b87f-4312-9be9-0f76d0ade144",
+                "objectValue": "Cust_Automation",
+                "usage": [
+                    
+                ],
+                "used": false
+            }
+        ]
+    },
+    {
+        "id": "cb9b849c-b40f-499b-88a7-18ff1a641acc",
+        "objectName": "costArea",
+        "consumedIn": null,
+        "isCreationEnabled": true,
+        "values": [
+            
+        ]
+    },
+    {
+        "id": "e22b576a-7ab0-47cd-814e-e6b0a1f1d384",
+        "objectName": "skillSet",
+        "consumedIn": null,
+        "isCreationEnabled": true,
+        "values": [
+            {
+                "id": "2bef4352-192e-4464-a832-ee0311c488f9",
+                "objectValue": "Automation",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "77e01ed1-8ece-4cbf-84c7-68332907a817",
+                "objectValue": "QA",
+                "usage": [
+                    
+                ],
+                "used": false
+            }
+        ]
+    },
+    {
+        "id": "f55ea326-d28e-4793-aeea-6af1b7e804f7",
+        "objectName": "company",
+        "consumedIn": "Users",
+        "isCreationEnabled": true,
+        "values": [
+            {
+                "id": "b4d2be2a-323e-4d1e-bb43-8c598ea86bbe",
+                "objectValue": "AutomationOrg",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "670507e7-3fc5-4bb4-83b6-ca85ee05fb80",
+                "objectValue": "AutomationOrgz",
+                "usage": [
+                    
+                ],
+                "used": false
+            },
+            {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation",
+                "usage": [
+                    
+                ],
+                "used": false
+            }
+        ]
+    }
+]
+Request method:	POST
+Request URI:	https://accelerate-qa.calibo.com/keycloakadapter/users/addUser
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "assignSelectedRoleInput": {
+        "rolesList": [
+            "Release Train Engineer"
+        ],
+        "userEmail": "testemail@calibo.com"
+    },
+    "userEdit": {
+        "lastName": "User",
+        "country": "India",
+        "cost": null,
+        "organizationName": "Calibo",
+        "roles": [
+            "Innovator"
+        ],
+        "isWorkOnProduct": true,
+        "communicationEmail": "",
+        "skills": [
+            "QA"
+        ],
+        "firstName": "Test",
+        "resourceAvailabilityEndDate": null,
+        "id": "040bef77-c5b9-4a99-926a-cdf270f214c4",
+        "resourceAvailabilityStartDate": null,
+        "costArea": {
+            
+        },
+        "email": "test@calibo.com",
+        "isAdministerProduct": false
+    },
+    "searchCriteria": {
+        "search": "",
+        "offset": 0,
+        "limit": 200,
+        "orderBy": "firstName",
+        "sort": "asc",
+        "status": [
+            "DEACTIVE",
+            "ACTIVE",
+            "PENDING",
+            "EMAILVERIFIED",
+            "ADDED"
+        ]
+    },
+    "users": [
+        {
+            "lastName": "User",
+            "country": "India",
+            "cost": "",
+            "roles": [
+                "Innovator"
+            ],
+            "isWorkOnProduct": true,
+            "communicationemail": "",
+            "communicationEmail": "",
+            "skills": [
+                
+            ],
+            "firstName": "Test",
+            "CompanyName": "",
+            "resourceAvailabilityEndDate": null,
+            "resourceAvailabilityStartDate": null,
+            "costArea": {
+                
+            },
+            "email": "01dwj4@calibo.com",
+            "isAdministerProduct": false,
+            "status": "ADDED"
+        }
+    ]
+}
+HTTP/1.1 201 
+Date: Tue, 04 Aug 2026 11:32:16 GMT
+Content-Type: application/json
+Content-Length: 43
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a71cdbf16dbfca652d3ca82d1be1db8
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: b1f4240f-f5e3-4b13-b98b-5d1bd624199f#484501
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 853
+X-Kong-Proxy-Latency: 0
+Via: kong/3.0.2.0-enterprise-edition
+
+Success message - User created successfully
+Request method:	POST
+Request URI:	https://accelerate-qa.calibo.com/keycloakadapter/users/retrieveUsersViewList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "search": "01dwj4@calibo.com",
+    "offset": 0,
+    "limit": 10,
+    "orderBy": "firstName",
+    "sort": "asc",
+    "status": [
+        "DEACTIVE",
+        "ACTIVE",
+        "PENDING",
+        "EMAILVERIFIED",
+        "ADDED"
+    ]
+}
+HTTP/1.1 200 
+Date: Tue, 04 Aug 2026 11:32:18 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a71cdc15bf081bd5daf9646a2cfef04
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: b1f4240f-f5e3-4b13-b98b-5d1bd624199f#484605
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 409
+X-Kong-Proxy-Latency: 0
+Via: kong/3.0.2.0-enterprise-edition
+
+{
+    "users": [
+        {
+            "id": "4ae51b45-a891-42a1-9412-8a1c9f822124",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": "Test User",
+            "email": "01dwj4@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        }
+    ],
+    "totalElements": 1,
+    "totalPages": 1
+}
+Request method:	POST
+Request URI:	https://accelerate-qa.calibo.com/keycloakadapter/users/retrieveUsersViewList
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "search": "",
+    "offset": 0,
+    "limit": 200,
+    "orderBy": "firstName",
+    "sort": "asc",
+    "status": [
+        "DEACTIVE",
+        "ACTIVE",
+        "PENDING",
+        "EMAILVERIFIED",
+        "ADDED"
+    ]
+}
+HTTP/1.1 200 
+Date: Tue, 04 Aug 2026 11:32:21 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a71cdc38b353abfb5fdebf871290e79
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: b1f4240f-f5e3-4b13-b98b-5d1bd624199f#484684
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 2141
+X-Kong-Proxy-Latency: 1
+Via: kong/3.0.2.0-enterprise-edition
+
+{
+    "users": [
+        {
+            "id": "28bab0a6-daf7-4020-a325-81cbb5d25286",
+            "firstName": "A D",
+            "lastName": "Poojesh",
+            "fullName": "A D Poojesh",
+            "email": "poojeshad.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "6bb989d7-570a-4661-a6ba-7c21fc0ab048",
+            "firstName": "Aarti",
+            "lastName": "Kumari",
+            "fullName": "Aarti Kumari",
+            "email": "aashah.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Data Engineer"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": 1779301800000,
+            "resourceAvailabilityEndDate": 1779647399000,
+            "communicationEmail": null,
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 0,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "95484cdc-1d70-44fb-911d-65779ce45e60",
+            "firstName": "Abdiel",
+            "lastName": "Olmos",
+            "fullName": "Abdiel Olmos",
+            "email": "aolmos.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "3cdf8c2e-c560-4e5d-8f36-245459b8f839",
+            "firstName": "Abheesh",
+            "lastName": "George",
+            "fullName": "Abheesh George",
+            "email": "abgeorge.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "4cb64a11-3d70-4d10-942a-4da8c7e451af",
+            "firstName": "Adaikkappan",
+            "lastName": "Ramanathan",
+            "fullName": "Adaikkappan Ramanathan",
+            "email": "adramanathan.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Owner"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": true,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 0,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "a60028df-7214-4fbc-a56b-74a47d538760",
+            "firstName": "API",
+            "lastName": "Automation",
+            "fullName": "API Automation",
+            "email": "api.automation@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Designer",
+                "Product Owner",
+                "Data Scientist"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                {
+                    "id": "29546560-9b75-4c5d-8170-155ef8366538",
+                    "name": "AutomationPermanantTeam",
+                    "agileAssociation": true,
+                    "userCount": 1,
+                    "users": null,
+                    "description": "Do not delete or edit as used for automation execution",
+                    "additionalAttributes": [
+                        
+                    ],
+                    "createdBy": "ddeshpande@calibo.com",
+                    "createdOn": 1740058197723,
+                    "updatedBy": "ddeshpande@calibo.com",
+                    "updatedOn": 1740058197723,
+                    "organisation": null,
+                    "status": null,
+                    "deactivatedOn": null,
+                    "adGroupLink": false,
+                    "adGroups": null,
+                    "existingAdGroup": false
+                }
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 0,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "9d407007-fb08-4b13-bb62-404678a23018",
+            "firstName": "Dnyanesh",
+            "lastName": "Sunil Deshpande",
+            "fullName": "Dnyanesh Sunil Deshpande",
+            "email": "ddeshpande@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Data Engineer"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 2,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 2,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "873dc50b-edf6-46e0-b6b7-426c9381e6e6",
+            "firstName": "e2e",
+            "lastName": "automation",
+            "fullName": "e2e automation",
+            "email": "e2e.automation@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Developer"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                {
+                    "id": "02b3a40b-d572-4cf1-8aa7-be2d640d1bc0",
+                    "name": "TeamOne_OrgH_33m9OK",
+                    "agileAssociation": true,
+                    "userCount": 1,
+                    "users": null,
+                    "description": "Do not Edit or Delete",
+                    "additionalAttributes": [
+                        
+                    ],
+                    "createdBy": "api.automation@calibo.com",
+                    "createdOn": 1779427544192,
+                    "updatedBy": "api.automation@calibo.com",
+                    "updatedOn": 1779427544192,
+                    "organisation": null,
+                    "status": null,
+                    "deactivatedOn": null,
+                    "adGroupLink": false,
+                    "adGroups": null,
+                    "existingAdGroup": false
+                }
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 0,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "e0a39c3c-b682-4b1b-b1de-e84047e3690d",
+            "firstName": "Jotiram",
+            "lastName": "Sudam Chavan",
+            "fullName": "Jotiram Sudam Chavan",
+            "email": "jchavan@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "bbb382f7-df79-4a8e-a408-ef85cf846223",
+            "firstName": "Khushboo",
+            "lastName": "Motwani",
+            "fullName": "Khushboo Motwani",
+            "email": "kmotwani.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Owner",
+                "Scrum Master",
+                "Data Engineer",
+                "Developer"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 100,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 100,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "7377c855-879b-4de1-bd53-a90f22292a6f",
+            "firstName": "Kiran",
+            "lastName": "Gaikwad",
+            "fullName": "Kiran Gaikwad",
+            "email": "kgaikwad.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Viewer",
+                "Product Owner",
+                "Data Engineer"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 100,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 100,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "2cac4f88-1bdd-4adc-be49-e4b365d33438",
+            "firstName": "Kunal",
+            "lastName": "Kampassi",
+            "fullName": "Kunal Kampassi",
+            "email": "kukampassi@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "36112cfd-14d7-4209-b09c-1a8f946996fe",
+            "firstName": "Lazsa",
+            "lastName": "Developer4",
+            "fullName": "Lazsa Developer4",
+            "email": "lazsa-developer4@calibo.com",
+            "country": "",
+            "roles": [
+                "AutomationRuntimeRole5966",
+                "tenantAdmin",
+                "AutomationRuntimeRoleUpdated",
+                "AutomationRuntimeRole466",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Owner",
+                "Product Release Manager"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                {
+                    "id": "2d78b5bc-b56b-4d6a-a77c-b4c15d912d8f",
+                    "name": "AutomationTeam",
+                    "agileAssociation": true,
+                    "userCount": 1,
+                    "users": null,
+                    "description": "Do not edit or delete used for daily automation execution",
+                    "additionalAttributes": [
+                        
+                    ],
+                    "createdBy": "ddeshpande@calibo.com",
+                    "createdOn": 1738159600699,
+                    "updatedBy": "ddeshpande@calibo.com",
+                    "updatedOn": 1738159600699,
+                    "organisation": null,
+                    "status": null,
+                    "deactivatedOn": null,
+                    "adGroupLink": false,
+                    "adGroups": null,
+                    "existingAdGroup": false
+                }
+            ],
+            "allocation": 10,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 10,
+            "projectAllocation": 0,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "edc79f56-03a1-44a5-b89f-87104afa6a87",
+            "firstName": "Lingeswar",
+            "lastName": "Kondreddy",
+            "fullName": "Lingeswar Kondreddy",
+            "email": "lkondreddy@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "48f842c1-0962-4aed-9934-eb0681e3ae83",
+            "firstName": "Mahadev",
+            "lastName": "Kammar",
+            "fullName": "Mahadev Kammar",
+            "email": "mkammar.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Owner"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": 1785177000000,
+            "resourceAvailabilityEndDate": 1785522599000,
+            "communicationEmail": null,
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 0,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "e352b4df-fc82-4713-afdf-15df71cf3aee",
+            "firstName": "Maramreddy",
+            "lastName": "Ranganatha Reddy",
+            "fullName": "Maramreddy Ranganatha Reddy",
+            "email": "mrreddy@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "69e09025-7f63-4b61-b1e7-c57bb77be22d",
+            "firstName": "Nagaramani",
+            "lastName": "Kanaparti",
+            "fullName": "Nagaramani Kanaparti",
+            "email": "nkanaparti@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "47c6e9d5-06ac-4128-9643-817766c38f18",
+            "firstName": "Naveen Kumar",
+            "lastName": "Singotam",
+            "fullName": "Naveen Kumar Singotam",
+            "email": "nsingotam@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "PENDING",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "0f44e029-1a33-4acd-9390-3db77196c17b",
+            "firstName": "Nikhil Ramdas",
+            "lastName": "Bhalerao",
+            "fullName": "Nikhil Ramdas Bhalerao",
+            "email": "nbhalerao.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "91b6b0bc-fac2-4b64-ae0f-cb6555e5549d",
+            "firstName": "Ponnaganti Venkata",
+            "lastName": "Divya",
+            "fullName": "Ponnaganti Venkata Divya",
+            "email": "dponnaganti.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "PENDING",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "f9c13af4-a58f-48f2-86ad-c64af399607b",
+            "firstName": "Ritesh",
+            "lastName": "Das",
+            "fullName": "Ritesh Das",
+            "email": "rdas@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "c40e1753-a1bb-41ea-89ba-a3f1facdc402",
+            "firstName": "Sharad",
+            "lastName": "Patel",
+            "fullName": "Sharad Patel",
+            "email": "spatel@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "cd89dfba-8064-41f6-a333-16a202272a40",
+            "firstName": "Shilpa Mukund",
+            "lastName": "Toke",
+            "fullName": "Shilpa Mukund Toke",
+            "email": "stoke@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Owner"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 0,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "2810748e-d631-49df-99d2-573f7e997214",
+            "firstName": "Shuchita",
+            "lastName": "Rawat",
+            "fullName": "Shuchita Rawat",
+            "email": "srawat@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "4d80e70a-04fb-4f31-bf50-10cc7b6709c9",
+            "firstName": "Siddesh",
+            "lastName": "Belura",
+            "fullName": "Siddesh Belura",
+            "email": "sibelura.ext@calibo.com",
+            "country": "",
+            "roles": [
+                "tenantAdmin",
+                "CaliboSuperAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Viewer",
+                "Product Owner"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 100,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 100,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "627b5801-3186-4eed-b21f-34044ad5cd35",
+            "firstName": "Suyog",
+            "lastName": "Mahaveer Upadhye",
+            "fullName": "Suyog Mahaveer Upadhye",
+            "email": "supadhye@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": null,
+            "isAdministerProduct": null,
+            "isWorkOnProduct": null,
+            "additionalAttributes": [
+                
+            ],
+            "status": "PENDING",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "12eeeab4-d5b1-4462-85f4-7053af2775e8",
+            "firstName": "Syed",
+            "lastName": "Munna",
+            "fullName": "Syed Munna",
+            "email": "ssardar.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                "Product Owner"
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "b4d2be2a-323e-4d1e-bb43-8c598ea86bbe",
+                "objectValue": "AutomationOrg"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": 1783276200000,
+            "resourceAvailabilityEndDate": 1783535399000,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "DEACTIVE",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": null,
+            "teamAllocation": 0,
+            "projectAllocation": 0,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "4ae51b45-a891-42a1-9412-8a1c9f822124",
+            "firstName": "Test",
+            "lastName": "User",
+            "fullName": "Test User",
+            "email": "01dwj4@calibo.com",
+            "country": "India",
+            "roles": [
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": null,
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": "",
+            "isAdministerProduct": false,
+            "isWorkOnProduct": true,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        },
+        {
+            "id": "085c3433-d4d0-47e5-bfbb-6835b19706e3",
+            "firstName": "Veena",
+            "lastName": "Kumari",
+            "fullName": "Veena Kumari",
+            "email": "vekumari.ext@calibo.com",
+            "country": "India",
+            "roles": [
+                "tenantAdmin",
+                "Innovator"
+            ],
+            "teamRoles": [
+                
+            ],
+            "usageFeaturesUnlimited": false,
+            "usageLimits": {
+                
+            },
+            "skills": [
+                
+            ],
+            "costArea": null,
+            "cost": null,
+            "organizationName": {
+                "id": "8e5afa23-dd06-4768-931d-7ffa402fcc5d",
+                "objectValue": "Company_Automation"
+            },
+            "costAreaTitle": null,
+            "teams": [
+                
+            ],
+            "allocation": 0,
+            "resourceAvailabilityStartDate": null,
+            "resourceAvailabilityEndDate": null,
+            "communicationEmail": "",
+            "isAdministerProduct": true,
+            "isWorkOnProduct": false,
+            "additionalAttributes": [
+                
+            ],
+            "status": "ADDED",
+            "userRemovedFromAd": false,
+            "manager": null,
+            "managerName": null,
+            "maximumAllocation": 100,
+            "keycloakRole": "tenantAdmin,Innovator",
+            "teamAllocation": null,
+            "projectAllocation": null,
+            "userType": null,
+            "eulaAccepted": true
+        }
+    ],
+    "totalElements": 29,
+    "totalPages": 1
+}
+Request method:	PATCH
+Request URI:	https://accelerate-qa.calibo.com/keycloakadapter/users/updateUserDetails
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "lastName": "User",
+    "country": "India",
+    "cost": null,
+    "organizationName": "Calibo",
+    "roles": [
+        "Innovator"
+    ],
+    "isWorkOnProduct": true,
+    "communicationEmail": "",
+    "skills": [
+        "QA"
+    ],
+    "firstName": "Test",
+    "resourceAvailabilityEndDate": null,
+    "id": "4ae51b45-a891-42a1-9412-8a1c9f822124",
+    "resourceAvailabilityStartDate": null,
+    "costArea": {
+        
+    },
+    "email": "01dwj4@calibo.com",
+    "isAdministerProduct": false
+}
+HTTP/1.1 400 
+Date: Tue, 04 Aug 2026 11:32:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a71cdc70bc1a0e893023d9bfe653c65
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: b1f4240f-f5e3-4b13-b98b-5d1bd624199f#484790
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 21
+X-Kong-Proxy-Latency: 0
+Via: kong/3.0.2.0-enterprise-edition
+
+{
+    "code": "LL005",
+    "message": "Malformed payload, JSON parser error.",
+    "subMessages": null
+}
+Request method:	POST
+Request URI:	https://accelerate-qa.calibo.com/rbac/userrole/assignselectedroles
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "rolesList": [
+        "Release Train Engineer"
+    ],
+    "userEmail": "01dwj4@calibo.com"
+}
+HTTP/1.1 200 
+Date: Tue, 04 Aug 2026 11:32:24 GMT
+Content-Length: 0
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a71cdc8914fd03acc0de58ed1b09e0d
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: b1f4240f-f5e3-4b13-b98b-5d1bd624199f#484797
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 55
+X-Kong-Proxy-Latency: 1
+Via: kong/3.0.2.0-enterprise-edition
+Request method:	DELETE
+Request URI:	https://accelerate-qa.calibo.com/keycloakadapter/users/removeUser/4ae51b45-a891-42a1-9412-8a1c9f822124
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	userId=4ae51b45-a891-42a1-9412-8a1c9f822124
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    
+}
+HTTP/1.1 200 
+Date: Tue, 04 Aug 2026 11:32:26 GMT
+Content-Type: application/json
+Content-Length: 43
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a71cdcaeed46799c592137f6dafd557
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: 645df60e-6485-402e-ab4c-01f8a4fa48ed#468553
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 292
+X-Kong-Proxy-Latency: 3
+Via: kong/3.0.2.0-enterprise-edition
+
+Success message - User deleted successfully

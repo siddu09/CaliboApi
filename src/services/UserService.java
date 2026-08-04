@@ -1,154 +1,66 @@
 package services;
 
-import helpers.UsersHelper;
+import api.UserApiClient;
 import io.restassured.response.Response;
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import validators.UserValidator;
 
-/**
- * User business workflow.
- *
- * Responsibilities:
- * - Prepare request
- * - Execute API
- * - Validate response
- * - Store runtime data
- */
-public class UserService {
+import java.util.List;
+import java.util.Map;
 
-    private final UsersHelper usersHelper;
-    private final UserValidator validator;
+/** Executes the user-management test flow with instance-scoped runtime state. */
+public final class UserService {
 
-    public UserService() {
-        this.usersHelper = new UsersHelper();
-        this.validator = new UserValidator();
-    }
+    private final UserApiClient api = new UserApiClient();
+    private final UserValidator validator = new UserValidator();
+    private final UserContext context = new UserContext();
+    private final UserRequestBuilder requests = new UserRequestBuilder(context);
 
-    /**
-     * Create User
-     */
     public void createUser() {
+        JSONObject request = requests.createUserRequest();
+        Response response = api.createUser(request);
+        validator.userCreated(response);
 
-        JSONObject request = UserDataFactory.createUserRequest();
-
-        Response response = usersHelper.createUser(request);
-
-        validator.validateUserCreated(response);
-
-        UserContext.userId =
-                response.jsonPath().getString("id");
-
-        UserContext.email =
-                request.get("email").toString();
+        JSONObject user = (JSONObject) ((JSONArray) request.get("users")).getFirst();
+        context.email(user.get("email").toString());
+        Response search = api.searchUsers(requests.searchByEmailRequest(context.email()));
+        validator.successful(search, 200, "find created user");
+        Map<String, Object> createdUser = findUser(search.jsonPath().getList("users"), context.email());
+        context.details(createdUser);
+        context.id(createdUser.get("id").toString());
+        System.out.printf("[Users] Created %s (%s)%n", context.email(), context.id());
     }
 
-    /**
-     * Search User
-     */
-    public void searchUser() {
-
-        JSONObject request =
-                UserDataFactory.searchUserRequest();
-
-        Response response =
-                usersHelper.searchUsers(request);
-
-        validator.validateSearchResponse(response);
+    public void searchUsers() {
+        validator.usersReturned(api.searchUsers(requests.searchUserRequest()), "search users");
     }
 
-    /**
-     * Get User
-     */
-    public void getUser() {
-
-        Response response =
-                usersHelper.getUser(UserContext.userId);
-
-        validator.validateUserDetails(response);
+    public void getAllUsers() {
+        validator.usersReturned(api.getAllUsersWithTeams(requests.getAllUsersRequest()), "get all users");
     }
 
-    /**
-     * Update User
-     */
     public void updateUser() {
-
-        JSONObject request =
-                UserDataFactory.updateUserRequest();
-
-        Response response =
-                usersHelper.updateUser(
-                        UserContext.userId,
-                        request);
-
-        validator.validateUserUpdated(response);
+        validator.userUpdated(api.updateUser(requests.updateUserRequest()));
     }
 
-    /**
-     * Assign Role
-     */
     public void assignRole() {
-
-        JSONObject request =
-                UserDataFactory.assignRoleRequest();
-
-        Response response =
-                usersHelper.assignRole(request);
-
-        validator.validateRoleAssigned(response);
+        validator.successful(api.assignRoles(requests.assignRoleRequest()), 200, "assign role");
     }
 
-    /**
-     * Remove Role
-     */
-    public void removeRole() {
-
-        JSONObject request =
-                UserDataFactory.removeRoleRequest();
-
-        Response response =
-                usersHelper.removeRole(request);
-
-        validator.validateRoleRemoved(response);
-    }
-
-    /**
-     * Enable User
-     */
-    public void enableUser() {
-
-        JSONObject request =
-                UserDataFactory.enableUserRequest();
-
-        Response response =
-                usersHelper.enableUser(request);
-
-        validator.validateUserEnabled(response);
-    }
-
-    /**
-     * Disable User
-     */
-    public void disableUser() {
-
-        JSONObject request =
-                UserDataFactory.disableUserRequest();
-
-        Response response =
-                usersHelper.disableUser(request);
-
-        validator.validateUserDisabled(response);
-    }
-
-    /**
-     * Delete User
-     */
     public void deleteUser() {
-
-        Response response =
-                usersHelper.deleteUser(
-                        UserContext.userId);
-
-        validator.validateUserDeleted(response);
+        validator.successful(api.deleteUser(context.id(), new JSONObject()), 200, "delete user");
+        System.out.printf("[Users] Deleted %s (%s)%n", context.email(), context.id());
     }
 
+    private Map<String, Object> findUser(List<Map<String, Object>> users, String email) {
+        if (users != null) {
+            for (Map<String, Object> user : users) {
+                if (email.equals(user.get("email")) && user.get("id") != null) {
+                    return user;
+                }
+            }
+        }
+        throw new IllegalStateException("Created user was not returned by search: " + email);
+    }
 }
