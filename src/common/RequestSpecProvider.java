@@ -6,8 +6,6 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 
-import java.nio.file.Path;
-
 public final class RequestSpecProvider {
 
     private static RequestSpecification requestSpecification;
@@ -21,7 +19,6 @@ public final class RequestSpecProvider {
                 .addHeader(Constants.AUTHORIZATION, Constants.BEARER + Config.accessToken)
                 .addHeader(Constants.TENANT_ID, Config.tenantId)
                 .setContentType(ContentType.JSON);
-        ApiLogger.addTo(builder);
         requestSpecification = builder.build();
     }
 
@@ -32,11 +29,4 @@ public final class RequestSpecProvider {
         return new RequestSpecBuilder().addRequestSpecification(requestSpecification).build();
     }
 
-    public static Path getApiLogPath() {
-        return ApiLogger.getLogPath();
-    }
-
-    public static synchronized void closeApiLogging() {
-        ApiLogger.close();
-    }
 }
