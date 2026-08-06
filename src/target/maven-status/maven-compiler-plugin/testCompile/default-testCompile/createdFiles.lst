@@ -1,4 +1,6 @@
 tests/UsersTests.class
 tests/DevStageTests.class
+tests/SimplePortfolioTest.class
+tests/LoginTest.class
 tests/PortfolioProductFeatureTests.class
 tests/DataIngestionTests.class

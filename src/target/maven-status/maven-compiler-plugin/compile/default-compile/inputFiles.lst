@@ -9,6 +9,8 @@
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/config/Config.java
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/config/Constants.java
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/endpoints/ApiEndpoints.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/pro/building_blocks/PortfolioApiBuildingBlock.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/pro/helper/PortfolioApiHelper.java
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/services/DataIngestionLogParser.java
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/services/DataIngestionService.java
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/services/PortfolioProductFeatureRequestBuilder.java

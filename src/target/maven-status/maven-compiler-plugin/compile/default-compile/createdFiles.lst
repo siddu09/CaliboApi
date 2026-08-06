@@ -17,10 +17,12 @@ api/DataIngestionApiClient.class
 validators/StageValidator.class
 services/StageService.class
 services/PortfolioProductFeatureRequestBuilder.class
+pro/helper/PortfolioApiHelper.class
 services/DataIngestionLogParser$RequestStart.class
 services/DataIngestionLogParser$Transaction.class
 services/UserService.class
 utils/DropdownUtils.class
+pro/building_blocks/PortfolioApiBuildingBlock.class
 endpoints/ApiEndpoints.class
 api/StageApiClient.class
 utils/JsonUtils.class

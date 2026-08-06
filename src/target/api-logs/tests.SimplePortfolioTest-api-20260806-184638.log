@@ -1,0 +1,83 @@
+Request method:	POST
+Request URI:	https://accelerate-qa.calibo.com/elab/portfolios
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=[ BLACKLISTED ]
+				x-tenantid=Tenant296388
+				Accept=application/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "description": "Simple portfolio created by API automation",
+    "currency": "USD",
+    "stakeholders": [
+        {
+            "name": "API Automation",
+            "roleName": "OWNER",
+            "email": "api.automation@calibo.com",
+            "username": "api.automation@calibo.com"
+        }
+    ],
+    "title": "Simple_API_Portfolio_198605",
+    "strategy": "API automation portfolio strategy",
+    "priority": "LOW",
+    "value": 100
+}
+HTTP/1.1 201 
+Date: Thu, 06 Aug 2026 13:16:40 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-TraceId: 6a748938a6c4a7cd32c9daac69f38304
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Kong-Request-ID: e9abd983-bf0e-470f-8c60-2c00a591a97a#583565
+vary: Origin
+Access-Control-Allow-Credentials: true
+X-Frame-Options: SAMEORIGIN
+X-Kong-Upstream-Latency: 290
+X-Kong-Proxy-Latency: 0
+Via: kong/3.0.2.0-enterprise-edition
+
+{
+    "id": "9644fd7d-44eb-4ebb-8ffb-793799d06d62",
+    "code": "f7e6dbd5-ac05-44c8-bb87-0b994548cd3c",
+    "title": "Simple_API_Portfolio_198605",
+    "description": "Simple portfolio created by API automation",
+    "strategy": "API automation portfolio strategy",
+    "visibility": true,
+    "priority": "LOW",
+    "value": 100,
+    "currency": "USD",
+    "stakeholders": [
+        {
+            
+        }
+    ],
+    "projects": [
+        
+    ],
+    "createdBy": "api.automation@calibo.com",
+    "name": "API Automation",
+    "createdOn": "2026-08-06T13:16:40.712545",
+    "updatedOn": "2026-08-06T13:16:40.712554",
+    "workflowEnabled": false,
+    "workflowStatus": "NONE",
+    "productWorkflowEnabled": false,
+    "reworkLimitEnabled": false,
+    "additionalAttributes": [
+        
+    ]
+}
