@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-06T20:55:41 IST" name="Surefire suite" finished-at="2026-08-06T20:55:43 IST" duration-ms="2089">
+  <suite started-at="2026-08-06T21:55:51 IST" name="Surefire suite" finished-at="2026-08-06T21:55:56 IST" duration-ms="4830">
     <groups>
     </groups>
-    <test started-at="2026-08-06T20:55:41 IST" name="Surefire test" finished-at="2026-08-06T20:55:43 IST" duration-ms="2089">
-      <class name="tests.SimplePortfolioTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.SimplePortfolioTest@29ba4338]" started-at="2026-08-06T20:55:00 IST" name="setupSuite" finished-at="2026-08-06T20:55:41 IST" duration-ms="40873" status="PASS">
+    <test started-at="2026-08-06T21:55:51 IST" name="Surefire test" finished-at="2026-08-06T21:55:56 IST" duration-ms="4830">
+      <class name="tests.SimpleProductTest">
+        <test-method signature="createProduct()[pri:0, instance:tests.SimpleProductTest@1a38c59b]" started-at="2026-08-06T21:55:55 IST" name="createProduct" finished-at="2026-08-06T21:55:56 IST" duration-ms="1421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProduct -->
+      </class> <!-- tests.SimpleProductTest -->
+      <class name="tests.SimpleFeatureTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.SimpleFeatureTest@770c2e6b]" started-at="2026-08-06T21:55:32 IST" name="setupSuite" finished-at="2026-08-06T21:55:51 IST" duration-ms="19407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method signature="createPortfolio()[pri:0, instance:tests.SimplePortfolioTest@29ba4338]" started-at="2026-08-06T20:55:41 IST" name="createPortfolio" finished-at="2026-08-06T20:55:43 IST" duration-ms="2077" status="PASS">
+        <test-method signature="createFeature()[pri:0, instance:tests.SimpleFeatureTest@770c2e6b]" started-at="2026-08-06T21:55:51 IST" name="createFeature" finished-at="2026-08-06T21:55:54 IST" duration-ms="2178" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createPortfolio -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.SimplePortfolioTest@29ba4338]" started-at="2026-08-06T20:55:43 IST" name="tearDownSuite" finished-at="2026-08-06T20:55:43 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- createFeature -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.SimpleFeatureTest@770c2e6b]" started-at="2026-08-06T21:55:56 IST" name="tearDownSuite" finished-at="2026-08-06T21:55:56 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
+      </class> <!-- tests.SimpleFeatureTest -->
+      <class name="tests.SimplePortfolioTest">
+        <test-method signature="createPortfolio()[pri:0, instance:tests.SimplePortfolioTest@448ff1a8]" started-at="2026-08-06T21:55:54 IST" name="createPortfolio" finished-at="2026-08-06T21:55:55 IST" duration-ms="1215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortfolio -->
       </class> <!-- tests.SimplePortfolioTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->

@@ -64,8 +64,6 @@ public class BaseTest {
         System.out.println("🧹 CLEANING UP TEST SUITE");
         System.out.println("=".repeat(60));
 
-        RequestSpecProvider.closeApiLogging();
-
         System.out.println("✅ Test suite completed successfully");
         System.out.println("=".repeat(60) + "\n");
     }

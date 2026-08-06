@@ -1,7 +1,6 @@
 package tests;
 
 import base.BaseTest;
-import io.restassured.response.Response;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 import pro.building_blocks.PortfolioApiBuildingBlock;
@@ -12,12 +11,11 @@ public class SimplePortfolioTest extends BaseTest {
     @Test
     @SuppressWarnings("unchecked")
     public void createPortfolio() {
-        PortfolioApiHelper helper = new PortfolioApiHelper();
+        PortfolioApiHelper portfolioHelper = new PortfolioApiHelper();
         PortfolioApiBuildingBlock portfolio = new PortfolioApiBuildingBlock();
-
-        JSONObject request = helper.loadPortfolioTestData();
-        request.put("title", helper.getUniquePortfolioName(request));
-        Response response = portfolio.addNewProductPortfolio(request);
-        portfolio.verifyProductPortfolio(response);
+        JSONObject request = portfolioHelper.loadPortfolioTestData();
+        request.put("title", portfolioHelper.getUniquePortfolioName(request));
+        portfolio.verifyProductPortfolio(portfolio.addNewProductPortfolio(request));
+        System.out.println("Portfolio ID: " + portfolio.getPortfolioId());
     }
 }

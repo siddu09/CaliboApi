@@ -1,5 +1,7 @@
+pro/helper/ProductApiHelper.class
 api/PortfolioProductFeatureApiClient.class
 common/AuthCode.class
+pro/building_blocks/FeatureApiBuildingBlock.class
 api/UserApiClient.class
 services/StageRequestBuilder.class
 common/RequestSpecProvider.class
@@ -13,6 +15,8 @@ base/BaseTest.class
 validators/UserValidator.class
 services/DataIngestionLogParser.class
 api/StageSetupApiClient.class
+pro/helper/FeatureApiHelper.class
+pro/building_blocks/ProductApiBuildingBlock.class
 api/DataIngestionApiClient.class
 validators/StageValidator.class
 services/StageService.class
