@@ -6,7 +6,7 @@ import io.restassured.response.Response;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 
-import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.*;
 
 public class PortfolioApiBuildingBlock {
 

@@ -19,6 +19,7 @@ services/StageService.class
 services/PortfolioProductFeatureRequestBuilder.class
 pro/helper/PortfolioApiHelper.class
 services/DataIngestionLogParser$RequestStart.class
+common/ApiLogger.class
 services/DataIngestionLogParser$Transaction.class
 services/UserService.class
 utils/DropdownUtils.class
