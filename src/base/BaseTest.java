@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeSuite;
  * 
  * This class handles the complete test suite setup and teardown:
  * - Loads configuration from config.properties
- * - Performs Selenium-based login to capture Bearer token via CDP
+ * - Performs Playwright login to capture the Bearer token from network traffic
  * - Initializes RestAssured request specifications
  * - Handles cleanup after all tests complete
  * 

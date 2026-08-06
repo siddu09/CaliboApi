@@ -1,8 +1,8 @@
 # Calibo API Automation Framework
 
 A production-ready Java API Automation Framework for **Calibo Accelerate**, built on
-**Rest Assured + TestNG**, with a one-time **Selenium** login used only to capture the
-Bearer token (no Selenium usage during actual API test execution).
+**Rest Assured + TestNG**, with a one-time **Playwright** login used only to capture the
+Bearer token (no browser usage during actual API test execution).
 
 ---
 
@@ -14,9 +14,7 @@ Bearer token (no Selenium usage during actual API test execution).
 | Maven                   | 3.x                       |
 | TestNG                  | 7.11.0                    |
 | Rest Assured            | 5.5.5                     |
-| Selenium (login only)   | 4.34.0                    |
-| WebDriverManager        | 6.3.2                     |
-| Gson                    | 2.11.0                    |
+| Playwright (login only) | 1.44.0                    |
 | JSON Simple             | 1.1.1                     |
 
 ---
@@ -47,7 +45,7 @@ CaliboAPI/
     │   └── BaseTest.java
     │
     ├── common/                   Framework-wide reusable classes
-    │   ├── AuthCode.java             Selenium login + Bearer token capture (CDP)
+    │   ├── AuthCode.java             Playwright login + Bearer token capture
     │   └── RequestSpecProvider.java  Shared RestAssured RequestSpecification
     │
     ├── config/                   Centralized configuration & constants
@@ -87,7 +85,7 @@ CaliboAPI/
 Config.load()                     → reads resources/config.properties
         │
         ▼
-AuthCode.login()                  → Selenium + Chrome DevTools Protocol (CDP)
+AuthCode.login()                  → Playwright login + network request listener
         │
         ▼
 Capture Bearer Access Token       → from network traffic, browser closed after
@@ -101,7 +99,7 @@ API Tests Execute                 → Tests → Services → API Client → REST
 
 Authentication happens **once per suite**. Every subsequent API call reuses the same
 `RequestSpecification`/token — no duplicated headers, no duplicated base URL, and no
-Selenium execution during the actual API test run.
+browser execution during the actual API test run.
 
 ---
 
