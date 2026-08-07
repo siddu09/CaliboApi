@@ -1,3 +1,17 @@
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/BuildingBlocks/CrawlersCatalogs/Catalog.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/BuildingBlocks/CrawlersCatalogs/Crawler.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/BuildingBlocks/DataPipeline/DataSource.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/BuildingBlocks/Pipeline/DataIntegration.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/BuildingBlocks/Pipeline/DataLake.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/Helpers/CrawlersCatalogs/CrawlerCatalogUtils.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/Helpers/CrawlersCatalogs/CrawlerConfugurations.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/Helpers/Pipeline/DataIntegrationHelper.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/Helpers/Pipeline/DataLakeHelper.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/Helpers/Pipeline/DataSourceHelper.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/Helpers/Pipeline/IntegrationJobHelper.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DPS/Helpers/Pipeline/PipelineBuilder.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DevSecops/building_blocks/DevStageBuildingBlock.java
+/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/DevSecops/helper/DevStageHelper.java
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/api/DataIngestionApiClient.java
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/api/PortfolioProductFeatureApiClient.java
 /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/api/StageApiClient.java

@@ -18,6 +18,8 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public final class UserRequestBuilder {
 
+    private static final String USERS_JSON = "users.json";
+
     private final UserContext context;
 
     UserRequestBuilder(UserContext context) {
@@ -51,7 +53,7 @@ public final class UserRequestBuilder {
 
         // Read user.json template (has {"users": [{...}]} structure)
         JSONObject request = JsonUtils.readJson(
-                Config.testDataPath + Config.usersJson);
+                Config.testDataPath + USERS_JSON);
 
         // Get users[0]
         JSONArray users = (JSONArray) request.get("users");
@@ -92,7 +94,7 @@ public final class UserRequestBuilder {
 
         // Read user.json template
         JSONObject data = JsonUtils.readJson(
-                Config.testDataPath + Config.usersJson);
+                Config.testDataPath + USERS_JSON);
 
         // Extract searchCriteria section
         JSONObject searchCriteria = (JSONObject) data.get("searchCriteria");
@@ -132,7 +134,7 @@ public final class UserRequestBuilder {
 
         // Read user.json template
         JSONObject data = JsonUtils.readJson(
-                Config.testDataPath + Config.usersJson);
+                Config.testDataPath + USERS_JSON);
 
         // Extract assignSelectedRoleInput section
         JSONObject assignRoleInput = (JSONObject) data.get("assignSelectedRoleInput");

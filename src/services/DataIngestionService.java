@@ -15,6 +15,8 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /** Replays the successful ingestion API flow while replacing all runtime identifiers. */
 public final class DataIngestionService {
@@ -137,17 +139,41 @@ public final class DataIngestionService {
     private String replace(String value) {
         if (value == null) return null;
         String replaced = value;
-        for (Map.Entry<String, String> entry : replacements.entrySet()) {
-            replaced = replaced.replace(entry.getKey(), entry.getValue());
+        List<Map.Entry<String, String>> entries = replacements.entrySet().stream()
+                .sorted((left, right) -> Integer.compare(right.getKey().length(), left.getKey().length()))
+                .toList();
+        for (int index = 0; index < entries.size(); index++) {
+            replaced = replaced.replace(entries.get(index).getKey(), "__DPS_VALUE_" + index + "__");
+        }
+        for (int index = 0; index < entries.size(); index++) {
+            replaced = replaced.replace("__DPS_VALUE_" + index + "__", entries.get(index).getValue());
         }
         return replaced;
     }
 
     private String normalizeUri(String uri) {
         if (uri == null) return null;
-        // The legacy UI log recorded this catalog endpoint with an empty path
-        // segment. The current API gateway rejects that form with HTTP 400.
-        return uri.replace("/datapipeline/catalogs//", "/datapipeline/catalogs/");
+        return normalizeQueryIds(uri.replace("/datapipeline/catalogs//", "/datapipeline/catalogs/"));
+    }
+
+    private String normalizeQueryIds(String uri) {
+        Matcher parameters = Pattern.compile("([?&][A-Za-z]+Id=)([^&]+)").matcher(uri);
+        StringBuffer normalized = new StringBuffer();
+        while (parameters.find()) {
+            String value = parameters.group(2);
+            if (value.length() > 36) {
+                Pattern uuid = Pattern.compile("[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}");
+                String last = null;
+                for (int index = 0; index < value.length(); index++) {
+                    Matcher candidate = uuid.matcher(value).region(index, value.length());
+                    if (candidate.lookingAt()) last = candidate.group();
+                }
+                if (last != null) value = last;
+            }
+            parameters.appendReplacement(normalized, Matcher.quoteReplacement(parameters.group(1) + value));
+        }
+        parameters.appendTail(normalized);
+        return normalized.toString();
     }
 
     private String sourceRunSuffix(String sourceProjectName) {
@@ -262,7 +288,9 @@ public final class DataIngestionService {
 
     private boolean isIdentifierField(String fieldName, String expected, String actual) {
         String normalized = fieldName == null ? "" : fieldName.toLowerCase();
-        return normalized.equals("id") || normalized.endsWith("id") || normalized.endsWith("ids")
+        boolean identifierName = normalized.equals("id")
+                || normalized.endsWith("id") || normalized.endsWith("ids");
+        return (identifierName && (isUuid(expected) || isNumericIdentifier(expected)))
                 || (isUuid(expected) && isUuid(actual))
                 || (fieldName == null && isNumericIdentifier(expected) && isNumericIdentifier(actual));
     }

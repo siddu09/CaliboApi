@@ -12,7 +12,7 @@
         <classes>
             <class name="tests.UsersTests"/>
             <class name="tests.PortfolioProductFeatureTests"/>
-            <class name="tests.DataIngestionTests"/>
+            <class name="tests.DataIngestionPiplineWithDatabaseCrawlerCatalog"/>
             <class name="tests.DevStageTests"/>
         </classes>
     </test>

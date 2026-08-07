@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="tests.SimplePortfolioTest" time="50.788" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="tests.SimplePortfolioTest" time="35.918" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/26.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/target/surefire/surefirebooter-20260806214054381_3.jar /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/target/surefire 2026-08-06T21-40-54_295-jvmRun1 surefire-20260806214054381_1tmp surefire_0-20260806214054381_2tmp"/>
+    <property name="sun.java.command" value="/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/target/surefire/surefirebooter-20260807110353136_3.jar /Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/target/surefire 2026-08-07T11-03-53_075-jvmRun1 surefire-20260807110353136_1tmp surefire_0-20260807110353136_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="test" value="SimplePortfolioTest"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/target/surefire/surefirebooter-20260806214054381_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/sid/Documents/CaliboAutomation/calibooptimzed/CaliboAPI/src/target/surefire/surefirebooter-20260807110353136_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="26.0.1"/>
@@ -63,27 +63,12 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="createPortfolio" classname="tests.SimplePortfolioTest" time="7.974">
-    <system-out><![CDATA[
-============================================================
-🚀 INITIALIZING CALIBO API TEST SUITE
-============================================================
-
-📋 Step 1: Loading configuration...
-✅ Configuration loaded successfully
-
-🔐 Step 2: Capturing authentication token...
-[AuthCode] Playwright login succeeded; bearer token captured
+  <testcase name="createPortfolio" classname="tests.SimplePortfolioTest" time="2.365">
+    <system-out><![CDATA[INITIALIZING CALIBO API TEST SUITE
+[AuthCode] Bearer token captured
 ✅ Token captured successfully
 
-🌐 Step 3: Initializing API client...
-✅ API client initialized
-
-============================================================
-✅ TEST SUITE READY - Starting tests...
-============================================================
-
-Created IDs: portfolio=ed7236c9-7b17-485a-b569-3f3d31ab6d7a, product=eb33546c-9693-409e-a876-9cd9c495ba91, feature=370e471d-02fd-4f4d-8498-343fd74c108d
+Portfolio ID: 05a5263b-b570-4559-b890-40feb4011f75
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation

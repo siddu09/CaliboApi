@@ -3,13 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.PortfolioProductFeatureTests">
+      <class name="tests.DataIngestionPiplineWithDatabaseCrawlerCatalog">
         <methods>
           <include name="setupSuite"/>
+          <include name="mssqlCatalogDatabricksSnowflakePipeline"/>
           <include name="tearDownSuite"/>
-          <include name="createPortfolioProductAndFeature"/>
         </methods>
-      </class> <!-- tests.PortfolioProductFeatureTests -->
+      </class> <!-- tests.DataIngestionPiplineWithDatabaseCrawlerCatalog -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

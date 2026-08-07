@@ -21,7 +21,7 @@ public final class StageService {
     private final StageSetupApiClient setupApiClient = new StageSetupApiClient();
     private final StageValidator validator = new StageValidator();
 
-    public void createAndVerifyDevStage() {
+    public String createAndVerifyDevStage() {
         JSONObject setup = StageRequestBuilder.loadDevStageTestData();
         Map<String, String> configurationIds = validateRequiredConfigurations(setup);
 
@@ -89,7 +89,7 @@ public final class StageService {
         Response getResponse = apiClient.getStages(projectId, workstreamId, releaseId);
         validator.validateStageExists(getResponse, stageName, "KUBERNETES");
 
-        runDeploymentPipeline(setup, testData, getResponse, techStackIds,
+        return runDeploymentPipeline(setup, testData, getResponse, techStackIds,
                 configurationIds.get("KUBERNETES"), suffix);
     }
 
@@ -174,9 +174,9 @@ public final class StageService {
     }
 
     @SuppressWarnings("unchecked")
-    private void runDeploymentPipeline(JSONObject setup, JSONObject testData, Response stageResponse,
-                                       Map<String, String> techStackIds,
-                                       String kubernetesSettingId, String suffix) {
+    private String runDeploymentPipeline(JSONObject setup, JSONObject testData, Response stageResponse,
+                                         Map<String, String> techStackIds,
+                                         String kubernetesSettingId, String suffix) {
         JSONObject stage = findStage(stageResponse, testData.get("stageName").toString());
         String stageDetailsId = String.valueOf(stage.get("stageDetailsId"));
         JSONArray pipelineData = (JSONArray) stage.get("pipelineData");
@@ -222,6 +222,42 @@ public final class StageService {
                 throw new IllegalStateException("Pipeline logs missing for " + pipelineId);
             }
         }
+        return waitForLiveUrl(testData);
+    }
+
+    private String waitForLiveUrl(JSONObject testData) {
+        for (int attempt = 0; attempt < 12; attempt++) {
+            Response response = successful(apiClient.getStages(testData.get("projectId").toString(),
+                    testData.get("workstreamId").toString(), testData.get("releaseId").toString()),
+                    200, "retrieve deployed stage");
+            String url = findLiveUrl(findStage(response, testData.get("stageName").toString()));
+            if (url != null) return url;
+            try { Thread.sleep(10_000); }
+            catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                throw new IllegalStateException("Interrupted while waiting for live URL", e);
+            }
+        }
+        throw new IllegalStateException("Deployment completed but no application URL was generated");
+    }
+
+    private String findLiveUrl(Object value) {
+        if (value instanceof Map<?, ?> map) {
+            for (String field : List.of("applicationUrl", "appServerUrl")) {
+                Object url = map.get(field);
+                if (url != null && url.toString().matches("https?://.+")) return url.toString();
+            }
+            for (Object nested : map.values()) {
+                String url = findLiveUrl(nested);
+                if (url != null) return url;
+            }
+        } else if (value instanceof List<?> list) {
+            for (Object nested : list) {
+                String url = findLiveUrl(nested);
+                if (url != null) return url;
+            }
+        }
+        return null;
     }
 
     @SuppressWarnings("unchecked")
