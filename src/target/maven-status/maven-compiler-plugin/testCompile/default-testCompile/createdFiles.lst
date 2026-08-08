@@ -1,8 +1,0 @@
-tests/UsersTests.class
-tests/DevStageTests.class
-tests/SimplePortfolioTest.class
-tests/LoginTest.class
-tests/SimpleFeatureTest.class
-tests/PortfolioProductFeatureTests.class
-tests/DataIngestionPiplineWithDatabaseCrawlerCatalog.class
-tests/SimpleProductTest.class
