@@ -2,27 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-10T19:35:02 IST" name="Surefire suite" finished-at="2026-08-10T19:43:18 IST" duration-ms="495295">
+  <suite started-at="2026-08-10T20:11:56 IST" name="Surefire suite" finished-at="2026-08-10T20:12:08 IST" duration-ms="11906">
     <groups>
-      <group name="deploy-stage">
-        <method signature="DeployKubernetesApiTests.deployKubernetes()[pri:0, instance:DevSecOps.DeployKubernetesApiTests@29ba4338]" name="deployKubernetes" class="DevSecOps.DeployKubernetesApiTests"/>
-      </group> <!-- deploy-stage -->
     </groups>
-    <test started-at="2026-08-10T19:35:02 IST" name="Surefire test" finished-at="2026-08-10T19:43:18 IST" duration-ms="495295">
-      <class name="DevSecOps.DeployKubernetesApiTests">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:DevSecOps.DeployKubernetesApiTests@29ba4338]" started-at="2026-08-10T19:34:13 IST" name="setupSuite" finished-at="2026-08-10T19:35:02 IST" duration-ms="49887" status="PASS">
+    <test started-at="2026-08-10T20:11:56 IST" name="Surefire test" finished-at="2026-08-10T20:12:08 IST" duration-ms="11906">
+      <class name="tests.ProductDependencyTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.ProductDependencyTest@4d826d77]" started-at="2026-08-10T20:10:57 IST" name="setupSuite" finished-at="2026-08-10T20:11:56 IST" duration-ms="58383" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method signature="deployKubernetes()[pri:0, instance:DevSecOps.DeployKubernetesApiTests@29ba4338]" started-at="2026-08-10T19:35:02 IST" name="deployKubernetes" finished-at="2026-08-10T19:43:18 IST" duration-ms="495282" status="PASS">
+        <test-method signature="approveProductDependency()[pri:0, instance:tests.ProductDependencyTest@4d826d77]" started-at="2026-08-10T20:11:56 IST" name="approveProductDependency" description="Create two products, approve their dependency notification, and verify the relationship" finished-at="2026-08-10T20:12:08 IST" duration-ms="11891" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deployKubernetes -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:DevSecOps.DeployKubernetesApiTests@29ba4338]" started-at="2026-08-10T19:43:18 IST" name="tearDownSuite" finished-at="2026-08-10T19:43:18 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- approveProductDependency -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.ProductDependencyTest@4d826d77]" started-at="2026-08-10T20:12:08 IST" name="tearDownSuite" finished-at="2026-08-10T20:12:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
-      </class> <!-- DevSecOps.DeployKubernetesApiTests -->
+      </class> <!-- tests.ProductDependencyTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

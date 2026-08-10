@@ -3,13 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="DevSecOps.DeployKubernetesApiTests">
+      <class name="tests.ProductDependencyTest">
         <methods>
-          <include name="deployKubernetes"/>
           <include name="setupSuite"/>
+          <include name="approveProductDependency"/>
           <include name="tearDownSuite"/>
         </methods>
-      </class> <!-- DevSecOps.DeployKubernetesApiTests -->
+      </class> <!-- tests.ProductDependencyTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

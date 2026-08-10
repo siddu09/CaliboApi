@@ -1,5 +1,6 @@
 package DevSecOps.Helpers.DeploymentStage;
 
+
 import DevSecOps.Helpers.DeploymentStage.DeployStageRequestHelper;
 import common.RequestSpecProvider;
 import endpoints.ApiEndpoints;
@@ -147,3 +148,5 @@ public final class DeploySetupHelper {
     @SuppressWarnings("unchecked") private Map<String, Object> findObject(Object root, String key, Object expected) { if (root instanceof Map<?, ?> map) { if (String.valueOf(expected).equalsIgnoreCase(String.valueOf(map.get(key)))) return (Map<String, Object>) map; for (Object value : map.values()) { Map<String, Object> found = findObject(value, key, expected); if (found != null) return found; } } else if (root instanceof List<?> list) for (Object value : list) { Map<String, Object> found = findObject(value, key, expected); if (found != null) return found; } return null; }
     private void pause(int seconds) { try { Thread.sleep(seconds * 1000L); } catch (InterruptedException exception) { Thread.currentThread().interrupt(); throw new IllegalStateException("Setup wait interrupted", exception); } }
 }
+
+

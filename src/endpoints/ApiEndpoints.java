@@ -32,6 +32,12 @@ public final class ApiEndpoints {
     public static final String PORTFOLIOS = "/elab/portfolios";
     public static final String PROJECTS_V2 = "/elab/v2/projects";
     public static final String PROJECT_BY_ID_V2 = "/elab/v2/projects/{projectId}";
+    public static final String PROJECT_DEPENDENCY =
+            "/elab/projects/{sourceProjectId}/dependentOn/{targetProjectId}";
+    public static final String PROJECT_NOTIFICATIONS =
+            "/elab/projects/getNotifications/{projectId}";
+    public static final String PROJECT_NOTIFICATION_STATUS =
+            "/elab/projects/updateMsgReadStatus/{notificationId}";
     public static final String WORKSTREAMS_V2 = "/elab/v2/projects/workstreams";
     public static final String PROJECT_WORKSTREAMS =
             "/elab/projects/workstreams/getAllWorkstreams/{projectId}";

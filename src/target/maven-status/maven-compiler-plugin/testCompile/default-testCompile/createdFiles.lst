@@ -17,6 +17,7 @@ DevSecOps/Helpers/DeploymentStage/DeployRequestBodyHelper.class
 DevSecOps/Helpers/Pipeline/PipelineStatusHelper.class
 DevSecOps/Helpers/Pipeline/DeploymentPipelineHelper.class
 DevSecOps/Helpers/DeploymentStage/DeploymentStageHelper.class
+tests/ProductDependencyTest.class
 DevSecOps/Helpers/DeploymentStage/DeployStageValidationHelper.class
 tests/SimpleFeatureTest.class
 tests/DataIngestionPiplineWithDatabaseCrawlerCatalog.class

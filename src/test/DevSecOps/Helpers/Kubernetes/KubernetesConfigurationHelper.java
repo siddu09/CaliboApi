@@ -48,3 +48,4 @@ public final class KubernetesConfigurationHelper {
     private JSONObject json(String key) { return (JSONObject) required(key); }
     private Object required(String key) { Object value = state.get(key); if (value == null) throw new IllegalStateException("Missing DevSecOps runtime value: " + key); return value; }
 }
+
