@@ -29,27 +29,18 @@ public final class CatalogHelper {
     public void create() {
         JSONObject name = new JSONObject();
         name.put("name", "CatalogMSSQLS_" + context.suffix());
-        Response response = given().spec(RequestSpecProvider.get()).queryParams(params())
-                .body(name.toJSONString()).post(DPS_CATALOGS);
-        Assert.assertEquals(response.statusCode(), 200, response.asString());
+        Response response = checked(given().spec(RequestSpecProvider.get()).queryParams(params())
+                .body(name.toJSONString()).post(DPS_CATALOGS));
         context.catalogId(response.jsonPath().getString("id"));
         Assert.assertNotNull(context.catalogId(), "Catalog ID is missing");
-
         try {
             JSONArray crawled = (JSONArray) new JSONParser().parse(crawler.details().asString());
-            JSONObject schema = null;
-            for (Object item : crawled) if ("dbo".equals(((JSONObject) item).get("schema"))) schema = (JSONObject) item;
-            if (schema == null) throw new IllegalStateException("dbo schema was not crawled");
-            JSONArray tables = (JSONArray) schema.get("tables");
-            JSONObject table = null;
-            for (Object item : tables) if ("patients_5k".equals(((JSONObject) item).get("tableName"))) table = (JSONObject) item;
-            if (table == null) throw new IllegalStateException("patients_5k table was not crawled");
+            JSONObject schema = find(crawled, "schema", "dbo");
+            JSONObject table = find((JSONArray) schema.get("tables"), "tableName", "patients_5k");
             context.tableId(String.valueOf(table.get("id")));
             context.catalogTable(table);
             schema.put("id", UUID.randomUUID().toString().replace("-", "").substring(0, 9));
-            JSONArray selectedTables = new JSONArray();
-            selectedTables.add(table);
-            schema.put("tables", selectedTables);
+            schema.put("tables", array(table));
             table.put("schemaIndex", 0);
             table.put("name", table.get("tableName"));
             table.put("isChecked", true);
@@ -60,22 +51,29 @@ public final class CatalogHelper {
                 field.put("isChecked", true);
                 field.put("conditionAdded", false);
             }
-            JSONArray selected = new JSONArray();
-            selected.add(schema);
-            Response update = given().spec(RequestSpecProvider.get()).queryParams(params())
-                    .body(selected.toJSONString())
-                    .put(DPS_CATALOG.replace("{catalogId}", context.catalogId()));
-            Assert.assertEquals(update.statusCode(), 200, update.asString());
+            checked(given().spec(RequestSpecProvider.get()).queryParams(params()).body(array(schema).toJSONString())
+                    .put(catalogUri()));
         } catch (Exception exception) {
             throw new IllegalStateException("Unable to build catalog from crawler details", exception);
         }
     }
 
     public void verify() {
-        Response response = given().spec(RequestSpecProvider.get()).queryParams(params())
-                .get(DPS_CATALOG.replace("{catalogId}", context.catalogId()));
-        Assert.assertEquals(response.statusCode(), 200, response.asString());
+        Response response = checked(given().spec(RequestSpecProvider.get()).queryParams(params()).get(catalogUri()));
         Assert.assertEquals(response.jsonPath().getString("id"), context.catalogId());
+    }
+
+    private JSONObject find(JSONArray items, String key, String value) {
+        for (Object item : items) if (value.equals(((JSONObject) item).get(key))) return (JSONObject) item;
+        throw new IllegalStateException(value + " was not crawled");
+    }
+
+    @SuppressWarnings("unchecked")
+    private JSONArray array(Object item) { JSONArray array = new JSONArray(); array.add(item); return array; }
+    private String catalogUri() { return DPS_CATALOG.replace("{catalogId}", context.catalogId()); }
+    private Response checked(Response response) {
+        Assert.assertEquals(response.statusCode(), 200, response.asString());
+        return response;
     }
 
     private Map<String, ?> params() {

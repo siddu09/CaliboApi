@@ -1,0 +1,22 @@
+{
+  "workstreamsRequest": [{
+    "title": "Simple_API_Feature_",
+    "description": "Simple feature created by API automation",
+    "teamName": "AutomationWorkStreamTeam",
+    "priority": "MEDIUM",
+    "projectId": "eb33546c-9693-409e-a876-9cd9c495ba91",
+    "sectionIds": [1, 3, 4, 5],
+    "memberList": [{
+      "firstName": "API",
+      "lastName": "Automation",
+      "fullName": "API Automation",
+      "userId": "a60028df-7214-4fbc-a56b-74a47d538760",
+      "email": "api.automation@calibo.com",
+      "roles": ["4515cc50-1938-406c-9b9a-1615249c7b3d"]
+    }],
+    "workstreamStage": "NOT_STARTED",
+    "colorCode": "#5d6631",
+    "startsOn": 1785923666341,
+    "endsOn": 1893456000000
+  }]
+}

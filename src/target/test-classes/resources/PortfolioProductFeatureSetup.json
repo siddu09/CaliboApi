@@ -1,0 +1,13 @@
+{
+  "portfolioPrefix": "Sample_API_Portfolio_",
+  "productPrefix": "Sample_API_Product_",
+  "featurePrefix": "Sample_API_Feature_",
+  "ownerRoleKey": "Owner",
+  "customerSegmentId": "59119a4b-b87f-4312-9be9-0f76d0ade144",
+  "businessGroupId": "a4472f5a-67ef-4da0-ab2c-5d399733e831",
+  "sectionIds": [ 1, 3, 4, 5],
+  "portfolioDescription": "API automation sample portfolio",
+  "portfolioStrategy": "API automation portfolio strategy",
+  "productDescription": "API automation sample product",
+  "featureDescription": "API automation sample feature"
+}

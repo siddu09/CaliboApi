@@ -32,24 +32,15 @@ public final class WorkflowHelper {
         context.workstreamId(required(response, "id"));
         context.releaseId(required(response, "releaseId"));
 
-        JSONObject stage = new JSONObject();
-        stage.put("loadBalancerType", "PUBLIC");
-        stage.put("stageType", "Dev");
-        stage.put("stageName", "Dev");
-        stage.put("stageOrder", 0);
-        stage.put("releaseName", "Default Release");
-        stage.put("releaseId", context.releaseId());
-        stage.put("projectId", context.projectId());
-        stage.put("projectName", context.projectName());
-        stage.put("workstreamId", context.workstreamId());
-        stage.put("workstreamName", context.workstreamName());
-        stage.put("portfolioId", product.get("portfolioId"));
-        stage.put("portfolioName", product.get("portfolioTitle"));
-        stage.put("portfolioTitle", product.get("portfolioTitle"));
-        stage.put("enableCi", false);
-        stage.put("loadBalancerCreationMode", "AUTO");
-        stage.put("cloudConfigId", "");
-        stage.put("deploymentModes", java.util.List.of("EC2", "KUBERNETES", "TERRAFORM", "OPENSHIFT"));
+        JSONObject stage = json(
+                "loadBalancerType", "PUBLIC", "stageType", "Dev", "stageName", "Dev", "stageOrder", 0,
+                "releaseName", "Default Release", "releaseId", context.releaseId(),
+                "projectId", context.projectId(), "projectName", context.projectName(),
+                "workstreamId", context.workstreamId(), "workstreamName", context.workstreamName(),
+                "portfolioId", product.get("portfolioId"), "portfolioName", product.get("portfolioTitle"),
+                "portfolioTitle", product.get("portfolioTitle"), "enableCi", false,
+                "loadBalancerCreationMode", "AUTO", "cloudConfigId", "",
+                "deploymentModes", java.util.List.of("EC2", "KUBERNETES", "TERRAFORM", "OPENSHIFT"));
         response = post(DPS_STAGE.replace("{stageName}", "Dev"), stage, 200);
         context.stageDetailsId(required(response, "stageDetailsId"));
 
@@ -77,11 +68,8 @@ public final class WorkflowHelper {
 
     @SuppressWarnings("unchecked") // json-simple exposes raw Map/List APIs.
     public void runAndVerify() {
-        JSONObject publish = new JSONObject();
-        publish.put("draftId", context.draftId());
-        publish.put("pipelineDetailsId", context.pipelineDetailsId());
-        publish.put("stageOrder", 0);
-        publish.put("projectId", context.projectId());
+        JSONObject publish = json("draftId", context.draftId(), "pipelineDetailsId", context.pipelineDetailsId(),
+                "stageOrder", 0, "projectId", context.projectId());
         post(DPS_DRAFT_PUBLISH_V3 + "?projectId=" + context.projectId(), publish, 201);
 
         String query = query();
@@ -97,30 +85,38 @@ public final class WorkflowHelper {
             if ("COMPLETED".equalsIgnoreCase(status)) return;
             if ("FAILED".equalsIgnoreCase(status) || "CANCELLED".equalsIgnoreCase(status))
                 throw new IllegalStateException("DPS workflow ended with " + status + ": " + response.asString());
-            try { Thread.sleep(seconds * 1000L); }
-            catch (InterruptedException exception) {
-                Thread.currentThread().interrupt();
-                throw new IllegalStateException("Workflow polling interrupted", exception);
-            }
+            sleep(seconds);
         }
         throw new IllegalStateException("DPS workflow did not complete within " + attempts * seconds + " seconds");
     }
 
     @SuppressWarnings("unchecked") // json-simple exposes raw Map/List APIs.
     private JSONObject ids() {
-        JSONObject body = new JSONObject();
-        body.put("projectId", context.projectId());
-        body.put("workstreamId", context.workstreamId());
-        body.put("releaseId", context.releaseId());
-        body.put("stageDetailsId", context.stageDetailsId());
+        JSONObject body = json("projectId", context.projectId(), "workstreamId", context.workstreamId(),
+                "releaseId", context.releaseId(), "stageDetailsId", context.stageDetailsId());
         if (context.pipelineDetailsId() != null) body.put("pipelineDetailsId", context.pipelineDetailsId());
         return body;
     }
 
     private String query() {
-        return "?projectId=" + context.projectId() + "&releaseId=" + context.releaseId()
-                + "&stageDetailsId=" + context.stageDetailsId() + "&workstreamId=" + context.workstreamId()
-                + "&pipelineDetailsId=" + context.pipelineDetailsId();
+        return "?projectId=%s&releaseId=%s&stageDetailsId=%s&workstreamId=%s&pipelineDetailsId=%s".formatted(
+                context.projectId(), context.releaseId(), context.stageDetailsId(),
+                context.workstreamId(), context.pipelineDetailsId());
+    }
+
+    @SuppressWarnings("unchecked")
+    private JSONObject json(Object... values) {
+        JSONObject body = new JSONObject();
+        for (int index = 0; index < values.length; index += 2) body.put(values[index], values[index + 1]);
+        return body;
+    }
+
+    private void sleep(int seconds) {
+        try { Thread.sleep(seconds * 1000L); }
+        catch (InterruptedException exception) {
+            Thread.currentThread().interrupt();
+            throw new IllegalStateException("Workflow polling interrupted", exception);
+        }
     }
 
     private Response post(String uri, JSONObject body, int status) {

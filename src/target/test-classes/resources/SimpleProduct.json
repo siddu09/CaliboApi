@@ -1,0 +1,36 @@
+{
+  "title": "Simple_API_Product_",
+  "description": "Simple product created by API automation",
+  "teamName": "Auto_CreateProjectV2",
+  "creatorRoleId": "4515cc50-1938-406c-9b9a-1615249c7b3d",
+  "creatorId": "a60028df-7214-4fbc-a56b-74a47d538760",
+  "projectOwnerRoleId": "4515cc50-1938-406c-9b9a-1615249c7b3d",
+  "portfolioId": "6b6c1fe7-e0e7-47b8-bf75-14f8fb7eb3da",
+  "portfolioTitle": "DefaultAutomationPL",
+  "businessGroupId": "a4472f5a-67ef-4da0-ab2c-5d399733e831",
+  "customerSegments": ["59119a4b-b87f-4312-9be9-0f76d0ade144"],
+  "memberList": [{
+    "id": "154ac92e-c641-44f0-ad96-0d7c7c6be7e2",
+    "userId": "a60028df-7214-4fbc-a56b-74a47d538760",
+    "firstName": "API",
+    "lastName": "Automation",
+    "fullName": "API Automation",
+    "email": "api.automation@calibo.com",
+    "roles": ["4515cc50-1938-406c-9b9a-1615249c7b3d"],
+    "rolesAllocation": [{
+      "allocation": 0,
+      "roleId": "4515cc50-1938-406c-9b9a-1615249c7b3d",
+      "allocationFrom": 1785923666341,
+      "allocationTo": 1893456000000
+    }],
+    "totalAllocation": 0,
+    "allocationFrom": 1785923666341,
+    "allocationTo": 1893456000000
+  }],
+  "sectionIds": [1, 3, 4, 5],
+  "stageType": "PRODUCT",
+  "workstreamEnabled": true,
+  "visibility": true,
+  "startsOn": 1785923666341,
+  "endsOn": 1893456000000
+}
