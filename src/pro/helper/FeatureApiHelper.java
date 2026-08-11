@@ -18,17 +18,7 @@ public class FeatureApiHelper {
 
     public JSONObject loadFeatureTestData(String productKey, String featureKey) {
         String path = "products." + productKey;
-        JSONObject features = JsonUtils.readSection(E2E_JSON, path + ".features");
-        JSONObject feature = (JSONObject) features.get(featureKey);
-        if (feature == null) {
-            String sourceProduct = "product1".equals(productKey) ? "product2" : "product1";
-            feature = JsonUtils.readSection(E2E_JSON,
-                    "products." + sourceProduct + ".features." + featureKey);
-            feature = new JSONObject(feature);
-            feature.put("title", "");
-            feature.put("featureId", "");
-            JsonUtils.update(E2E_JSON, path + ".features." + featureKey, feature);
-        }
+        JSONObject feature = JsonUtils.readSection(E2E_JSON, path + ".features." + featureKey);
         JSONObject configuration = JsonUtils.readSection(E2E_JSON, "proConfiguration");
         configuration.put("featureDescription", feature.get("description"));
         Map<String, Object> user = user();
@@ -80,7 +70,7 @@ public class FeatureApiHelper {
         String path = "products." + productKey + ".features." + featureKey;
         JsonUtils.update(E2E_JSON, path + ".title", title);
         JsonUtils.update(E2E_JSON, path + ".featureId", featureId);
-        if ("feature2".equals(featureKey)) JsonUtils.update(E2E_JSON, "release.releaseId", releaseId);
+        JsonUtils.update(E2E_JSON, "release.releaseId", releaseId);
     }
 
     @SuppressWarnings("unchecked")
