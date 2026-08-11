@@ -16,6 +16,7 @@ public class SimplePortfolioTest extends BaseTest {
         JSONObject request = portfolioHelper.loadPortfolioTestData();
         request.put("title", portfolioHelper.getUniquePortfolioName(request));
         portfolio.verifyProductPortfolio(portfolio.addNewProductPortfolio(request));
+        portfolioHelper.updateRuntimeData(portfolio.getPortfolioTitle(), portfolio.getPortfolioId());
         System.out.println("Portfolio ID: " + portfolio.getPortfolioId());
     }
 }
