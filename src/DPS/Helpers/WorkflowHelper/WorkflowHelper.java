@@ -2,12 +2,9 @@ package DPS.Helpers.WorkflowHelper;
 
 import DPS.Helpers.DpsContext;
 import common.RequestSpecProvider;
-import config.Config;
-import config.Constants;
 import io.restassured.response.Response;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import utils.JsonUtils;
 
 import static endpoints.ApiEndpoints.*;
 import static io.restassured.RestAssured.given;
@@ -19,29 +16,16 @@ public final class WorkflowHelper {
 
     @SuppressWarnings("unchecked") // json-simple exposes raw Map/List APIs.
     public void setup() {
-        JSONObject product = JsonUtils.readJson(Config.testDataPath + "SimpleProduct.json");
-        product.put("title", context.projectName());
-        Response response = post(PROJECTS_V2, product, 201);
-        context.projectId(required(response, "id"));
-
-        JSONObject feature = JsonUtils.readJson(Config.testDataPath + "SimpleFeature.json");
-        JSONObject item = (JSONObject) ((JSONArray) feature.get("workstreamsRequest")).get(0);
-        item.put("title", context.workstreamName());
-        item.put("projectId", context.projectId());
-        response = post(WORKSTREAMS_V2, feature, 201);
-        context.workstreamId(required(response, "id"));
-        context.releaseId(required(response, "releaseId"));
-
         JSONObject stage = json(
                 "loadBalancerType", "PUBLIC", "stageType", "Dev", "stageName", "Dev", "stageOrder", 0,
                 "releaseName", "Default Release", "releaseId", context.releaseId(),
                 "projectId", context.projectId(), "projectName", context.projectName(),
                 "workstreamId", context.workstreamId(), "workstreamName", context.workstreamName(),
-                "portfolioId", product.get("portfolioId"), "portfolioName", product.get("portfolioTitle"),
-                "portfolioTitle", product.get("portfolioTitle"), "enableCi", false,
+                "portfolioId", context.portfolioId(), "portfolioName", context.portfolioName(),
+                "portfolioTitle", context.portfolioName(), "enableCi", false,
                 "loadBalancerCreationMode", "AUTO", "cloudConfigId", "",
                 "deploymentModes", java.util.List.of("EC2", "KUBERNETES", "TERRAFORM", "OPENSHIFT"));
-        response = post(DPS_STAGE.replace("{stageName}", "Dev"), stage, 200);
+        Response response = post(DPS_STAGE.replace("{stageName}", "Dev"), stage, 200);
         context.stageDetailsId(required(response, "stageDetailsId"));
 
         JSONObject pipeline = ids();
@@ -74,7 +58,7 @@ public final class WorkflowHelper {
 
         String query = query();
         expect(given().spec(RequestSpecProvider.get()).put(DPS_WORKFLOW_INITIATE + query), 200);
-        JSONObject setup = JsonUtils.readJson(Config.testDataPath + Constants.DATA_INGESTION_SETUP_JSON);
+        JSONObject setup = (JSONObject) context.payload().get("workflow");
         int attempts = ((Number) setup.get("workflowMaxAttempts")).intValue();
         int seconds = ((Number) setup.get("workflowPollSeconds")).intValue();
         for (int attempt = 1; attempt <= attempts; attempt++) {

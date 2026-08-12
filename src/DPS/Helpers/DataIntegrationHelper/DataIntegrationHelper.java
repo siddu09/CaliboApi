@@ -112,8 +112,8 @@ public final class DataIntegrationHelper {
         JSONArray ids = new JSONArray(); ids.add("84"); body.put("techStackIds", ids);
         body.put("title", context.projectName()); body.put("projectName", context.projectName());
         body.put("projectId", context.projectId()); body.put("workstreamName", context.workstreamName());
-        body.put("releaseId", context.releaseId()); body.put("portfolioId", "6b6c1fe7-e0e7-47b8-bf75-14f8fb7eb3da");
-        body.put("portfolioName", "DefaultAutomationPL"); body.put("isCalledFromDis", true);
+        body.put("releaseId", context.releaseId()); body.put("portfolioId", context.portfolioId());
+        body.put("portfolioName", context.portfolioName()); body.put("isCalledFromDis", true);
         body.put("createRepositories", "pending");
         JSONObject item = new JSONObject(); item.put("repoUrl", ""); item.put("uid", context.suffix());
         item.put("skipRepoCreation", true); item.put("projectKey", ""); item.put("repoName", "DATABRICKS");
