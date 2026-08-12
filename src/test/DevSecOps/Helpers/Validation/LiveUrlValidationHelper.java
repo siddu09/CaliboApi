@@ -5,10 +5,13 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.PlaywrightException;
 import com.microsoft.playwright.options.WaitUntilState;
+import config.Config;
+import utils.JsonUtils;
 
 import java.util.Map;
 
 public final class LiveUrlValidationHelper {
+    private static final String E2E_JSON = Config.testDataPath + "E2E.json";
     private final Map<String, Object> state;
 
     public LiveUrlValidationHelper(Map<String, Object> state) { this.state = state; }
@@ -21,7 +24,9 @@ public final class LiveUrlValidationHelper {
             com.microsoft.playwright.Response response = open(page, url);
             if (response == null || response.status() >= 400 || !page.locator("body").isVisible())
                 throw new IllegalStateException("Live URL validation failed: " + url);
-            System.out.println("Live URL validated: HTTP " + response.status() + " " + page.url());
+            String validatedUrl = page.url();
+            JsonUtils.update(E2E_JSON, "devSecOps.liveUrl", validatedUrl);
+            System.out.println("Live URL validated: HTTP " + response.status() + " " + validatedUrl);
         }
     }
 
@@ -35,6 +40,5 @@ public final class LiveUrlValidationHelper {
         throw new IllegalStateException("Unable to open live URL: " + url);
     }
 }
-
 
 

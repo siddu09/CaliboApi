@@ -3,31 +3,31 @@ package DevSecOps.Helpers.DeploymentStage;
 
 import DevSecOps.Helpers.DeploymentStage.DeployStageRequestHelper;
 import common.RequestSpecProvider;
+import config.Config;
 import endpoints.ApiEndpoints;
 import io.restassured.response.Response;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
+import utils.JsonUtils;
 
-import java.io.FileReader;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ThreadLocalRandom;
 
 import static io.restassured.RestAssured.given;
 
 public final class DeploySetupHelper {
+    private static final String E2E_JSON = Config.testDataPath + "E2E.json";
     private final Map<String, Object> state;
 
     public DeploySetupHelper(Map<String, Object> state) { this.state = state; }
 
+    @SuppressWarnings("unchecked")
     public void loadTestData() {
-        try (FileReader reader = new FileReader("test/DevSecOps/devtest/deploy-Kubernetes.json")) {
-            state.put("setup", (JSONObject) new JSONParser().parse(reader));
-        } catch (Exception exception) {
-            throw new IllegalStateException("Unable to load deploy-Kubernetes.json", exception);
-        }
+        JSONObject setup = JsonUtils.readSection(E2E_JSON, "devSecOps");
+        setup.put("portfolioName", JsonUtils.readString(E2E_JSON, "portfolio.title"));
+        setup.put("releaseName", JsonUtils.readString(E2E_JSON, "release.releaseName"));
+        state.put("setup", setup);
     }
 
     @SuppressWarnings("unchecked")
@@ -40,26 +40,15 @@ public final class DeploySetupHelper {
             configs.put(entry.getKey().toString(), find(ok(configuration(entry.getKey().toString()), 200)
                     .jsonPath().getList(""), "name", entry.getValue(), "id"));
         }
-        Map<String, Object> user = ok(get(ApiEndpoints.CURRENT_USER_INFO), 200).jsonPath().getMap("");
-        String role = find(ok(get(ApiEndpoints.PROJECT_ROLES), 200).jsonPath().getList(""),
-                "key", setup.get("ownerRoleKey"), "id");
-        String portfolio = find(ok(portfolio(setup.get("portfolioName").toString()), 200)
-                .jsonPath().getList("portfolios"), "title", setup.get("portfolioName"), "id");
-        List<Map<String, Object>> fields = ok(fields(), 200).jsonPath().getList("");
-        String business = nested(fields, "businessGroup", setup.get("businessGroupName"));
-        String customer = nested(fields, "customer", setup.get("customerSegmentName"));
-        String suffix = Long.toString(ThreadLocalRandom.current().nextLong(1679616), 36);
-        String projectName = setup.get("projectTitlePrefix") + suffix;
-        String workstreamName = setup.get("workstreamTitlePrefix") + suffix;
-        JSONObject project = DeployRequestBodyHelper.project(setup, user, role, portfolio, business, customer, projectName);
-        Response response = ok(post(ApiEndpoints.PROJECTS_V2, project), 201);
-        String projectId = required(response, "id");
-        ok(given().spec(RequestSpecProvider.get()).pathParam("projectId", projectId)
-                .body(project.toJSONString()).patch(ApiEndpoints.PROJECT_BY_ID_V2), 200);
-        response = ok(post(ApiEndpoints.WORKSTREAMS_V2,
-                DeployRequestBodyHelper.workstream(setup, user, role, projectId, workstreamName)), 201);
-        String workstreamId = required(response, "id");
-        String releaseId = required(response, "releaseId");
+        String portfolio = JsonUtils.readString(E2E_JSON, "portfolio.portfolioId");
+        String projectId = JsonUtils.readString(E2E_JSON, "products.product2.productId");
+        String projectName = JsonUtils.readString(E2E_JSON, "products.product2.title");
+        String workstreamId = JsonUtils.readString(E2E_JSON,
+                "products.product2.features.feature2.featureId");
+        String workstreamName = JsonUtils.readString(E2E_JSON,
+                "products.product2.features.feature2.title");
+        String releaseId = JsonUtils.readString(E2E_JSON, "release.releaseId");
+        String suffix = workstreamId.replace("-", "").substring(0, 6);
         verifyContext(projectId, workstreamId, releaseId);
         Map<String, String> techIds = createRepositories(setup, projectId, projectName, workstreamId,
                 workstreamName, releaseId, portfolio, suffix);
@@ -136,17 +125,10 @@ public final class DeploySetupHelper {
     }
 
     private Response configuration(String code) { return given().spec(RequestSpecProvider.get()).queryParam("configCode", code).get(ApiEndpoints.SETTINGS_BY_CONFIG_CODE); }
-    private Response portfolio(String name) { return given().spec(RequestSpecProvider.get()).queryParam("limit", 10).queryParam("offset", 0).queryParam("sort", "asc").queryParam("search", name).get(ApiEndpoints.PORTFOLIOS); }
-    private Response fields() { return given().spec(RequestSpecProvider.get()).queryParam("isUsageRequired", false).get(ApiEndpoints.DROPDOWN_VALUES); }
-    private Response get(String endpoint) { return given().spec(RequestSpecProvider.get()).get(endpoint); }
     private Response post(String endpoint, JSONObject body) { return given().spec(RequestSpecProvider.get()).body(body.toJSONString()).post(endpoint); }
     private Response ok(Response response, int status) { if (response.statusCode() != status) throw new IllegalStateException("Expected HTTP " + status + ": " + response.asString()); return response; }
-    private String required(Response response, String path) { String value = response.jsonPath().getString(path); if (value == null || value.isBlank()) throw new IllegalStateException("Missing " + path); return value; }
     private JSONObject requiredJson(String key) { Object value = state.get(key); if (value instanceof JSONObject json) return json; throw new IllegalStateException("Missing " + key); }
     private String find(List<Map<String, Object>> values, String key, Object expected, String output) { for (Map<String, Object> value : values) if (String.valueOf(expected).equalsIgnoreCase(String.valueOf(value.get(key)))) { Object result = value.get(output); if (result != null) return result.toString(); } throw new IllegalStateException("Missing " + expected); }
-    @SuppressWarnings("unchecked") private String nested(List<Map<String, Object>> fields, String name, Object expected) { for (Map<String, Object> field : fields) if (name.equals(field.get("objectName")) || name.equals(field.get("code"))) { Object values = field.get("objectValues"); if (!(values instanceof List<?>)) values = field.get("values"); if (values instanceof List<?> list) { try { return find((List<Map<String, Object>>) (List<?>) list, "objectValue", expected, "id"); } catch (IllegalStateException ignored) { return find((List<Map<String, Object>>) (List<?>) list, "value", expected, "id"); } } } throw new IllegalStateException("Missing " + expected); }
     @SuppressWarnings("unchecked") private Map<String, Object> findObject(Object root, String key, Object expected) { if (root instanceof Map<?, ?> map) { if (String.valueOf(expected).equalsIgnoreCase(String.valueOf(map.get(key)))) return (Map<String, Object>) map; for (Object value : map.values()) { Map<String, Object> found = findObject(value, key, expected); if (found != null) return found; } } else if (root instanceof List<?> list) for (Object value : list) { Map<String, Object> found = findObject(value, key, expected); if (found != null) return found; } return null; }
     private void pause(int seconds) { try { Thread.sleep(seconds * 1000L); } catch (InterruptedException exception) { Thread.currentThread().interrupt(); throw new IllegalStateException("Setup wait interrupted", exception); } }
 }
-
-
